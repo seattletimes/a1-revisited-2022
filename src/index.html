@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (!json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <script src="https://seattle-times.zeustechnology.com/main.js" async></script>
+      <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
+    <% } %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=IM+Fell+DW+Pica&family=IM+Fell+DW+Pica&family=Kadwa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child>
+      <%= t.include("partials/_nav.html") %>
+      <!-- content goes here -->
+      <div class="header">
+        <img src="assets/social.jpg">
+        <h1>my header here</h1>
+        <h2>My subhead here</h2>
+      </div>
+      <div class="body-text">
+      <p class="byline">By Sara Jean Green</p>
+      <p class="staff-position">Seattle Times staff reporter</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
+      </div>
+
+      <div class="svg">
+        <%= t.include("partials/A1-reconsidered.svg") %>
+        <button>Remove redactions</button>
+      </div>
+
+      <div class="scroll-blocks">
+        <div class="block" data-id="1">
+          <div class="category red">Language</div>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl.
+          <div class="image">
+            <img src="assets/exampleHeadline.png"/>
+          </div>
+        </div>
+
+        <div class="block" data-id="2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl.
+          <div class="image">
+            <img src="assets/exampleText.png"/>
+          </div>
+        </div>
+
+        <div class="block" data-id="3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl.
+
+          <div class="excerpt">
+            The evacuation was a credit the effieciency of the Army, it was a tragedy to the Japanese themselves and it was a said arrair for island residents, most of whom knew the Japanese personally.
+          </div>
+        </div>
+      </div>
+
+
+      <%= t.include("partials/_navBottom.html") %>
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

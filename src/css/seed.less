@@ -1,0 +1,72 @@
+@import "seattletimes";
+
+.header {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.body-text {
+  max-width: 720px;
+  padding: 10px;
+  margin: auto;
+}
+
+.svg {
+  width: ~"calc((100vh * .72538) + 5px)";
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  svg {
+    height: 100%;
+  }
+  button {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    background-color: goldenrod;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover, button:active  {
+    background-color: #a27810;
+  }
+  // max-width: 1000px;
+}
+
+.scroll-blocks {
+  // width: 50%;
+  // margin-left: 50%;
+  // width: ~"calc(100 - (100vh * .72538))";
+  margin-left: ~"calc((100vh * .72538) + 20px)";
+
+
+  .block {
+    margin: 50vh auto;
+    background-color: #eee;
+    padding: 10px;
+    max-width: 600px;
+
+    .category {
+      padding: 5px;
+      color: white;
+      font-family: @df-sans;
+      &.red { background-color: #be2026; }
+    }
+
+    .excerpt {
+      // font-family: 'EB Garamond', serif;
+      font-family: 'IM Fell DW Pica', serif;
+      // font-family: 'Kadwa', serif;
+      // font-family: 'Rokkitt', serif;
+      background-color: #fff;
+      padding: 10px;
+      margin-top: 5px;
+    }
+  }
+}
