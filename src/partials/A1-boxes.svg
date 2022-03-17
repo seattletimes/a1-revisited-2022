@@ -1,0 +1,75 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1004.1 1276.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fdddd7;
+      }
+
+      .cls-2 {
+        fill: #dda28f;
+      }
+
+      .cls-3 {
+        fill: #fbc0ad;
+      }
+
+      .cls-4 {
+        fill: #e5d8cf;
+      }
+
+      .cls-5 {
+        fill: #d8ddcc;
+      }
+
+      .cls-6 {
+        fill: #a5bb94;
+      }
+
+      .cls-7 {
+        fill: #c1cfb7;
+      }
+
+      .cls-8 {
+        fill: #ffe4af;
+      }
+
+      .cls-9 {
+        fill: #ffeccd;
+      }
+    </style>
+  </defs>
+  <g id="sourcingErrors">
+    <rect id="SE-2" class="cls-1" x="199.8" y="1246.7" width="96.7" height="30"/>
+    <rect id="SE-1" class="cls-1" x="201.3" y="811" width="94.1" height="30"/>
+  </g>
+  <g id="lackInformation">
+    <rect id="LI-2" class="cls-2" y="479.6" width="107.2" height="17.6"/>
+    <rect id="LI-8" class="cls-2" x="294.2" y="761.7" width="96.2" height="50.5"/>
+  </g>
+  <g id="inaccuracyMisrepresentation">
+    <rect id="IM-5" class="cls-3" y="498.5" width="107.2" height="25.9"/>
+  </g>
+  <g id="storyFraming">
+    <rect id="SF-2" class="cls-4" x="810.6" y="766.7" width="92.4" height="10.3"/>
+    <rect id="SF-1" class="cls-4" x="810.6" y="733.9" width="92.4" height="32"/>
+  </g>
+  <g id="racistLangauge">
+    <rect id="RL-1" class="cls-5" x="348.5" width="545.2" height="25.2"/>
+    <rect id="RL-2" class="cls-5" x="810.6" y="698" width="92.4" height="15.6"/>
+  </g>
+  <g id="offensiveLanguage">
+    <rect id="OL-2" class="cls-6" x="295.4" y="1043.3" width="97.1" height="11.1"/>
+    <rect id="OL-1" class="cls-6" x="674.5" y="354.2" width="128.8" height="61.3"/>
+  </g>
+  <g id="inaccurateLanguage">
+    <rect id="IL-1" class="cls-7" x="810.2" y="624.2" width="193.8" height="46.9"/>
+    <rect id="IL-4" class="cls-7" x="903.1" y="739.5" width="101" height="16.9"/>
+    <rect id="IL-2" class="cls-7" x="810.2" y="680.8" width="91.7" height="12.8"/>
+  </g>
+  <g id="photoSelection">
+    <rect id="PS-1" class="cls-8" x="107.3" y="380" width="281.7" height="236.1"/>
+  </g>
+  <g id="designLayout">
+    <rect id="DL-1" class="cls-9" x="351.8" y="26.5" width="541.9" height="308.5"/>
+  </g>
+</svg>

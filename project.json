@@ -2,7 +2,7 @@
   "s3": {
     "stage": {
       "bucket": "projects-staging.seattletimes.com",
-      "path": ""
+      "path": "baroque-lancaster"
     },
     "live": {
       "bucket": "projects.seattletimes.com",
@@ -15,7 +15,7 @@
   "url": "",
   "post_id": 0,
   "image": "assets/social.jpg",
-  "sheets": [],
+  "sheets": ["1LzBOAj9Z50VgJA_LcrlaWnYMttkBL7KKtlr7bWwbbok"],
   "docs": [],
   "embedded": true,
   "production": false

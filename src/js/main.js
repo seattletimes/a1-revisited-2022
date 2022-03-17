@@ -6,7 +6,7 @@ require("component-responsive-frame/child");
 const $ = require('jquery');
 require('waypoints/lib/noframework.waypoints.min');
 
-function makeVideoWaypoints(myVids) {
+function makeWayPoints() {
   $('.scroll-blocks .block').each((index, element) => {
 
           $(element).ready(function() {
@@ -14,38 +14,39 @@ function makeVideoWaypoints(myVids) {
 
             new Waypoint({
                 element: element,
-                enabled: false,
+                enabled: true,
                 handler: function(direction) {
+                  var classList = $(element).attr("class").split(' ')[1];
                   if(direction === "down") {
-
+                    $(`.svg svg #${classList}`).find( "rect" ).addClass("show");
+                    $(`.svg svg #${classList}`).find( "text" ).addClass("show");
                   }
                   else if (direction === "up") {
-
                   }
                 },
-                offset: '80%'
+                offset: '60%'
             });
 
             new Waypoint({
                 element: element,
-                enabled: false,
+                enabled: true,
                 handler: function(direction) {
+                  var classList = $(element).attr("class").split(' ')[1];
                   if(direction === "down") {
-
-                    }, 1000);
                   }
                   else if (direction === "up") {
+                    $(`.svg svg #${classList}`).find( "rect" ).removeClass("show");
+                    $(`.svg svg #${classList}`).find( "text" ).removeClass("show");
                   }
                 },
-                offset: '-20%'
+                offset: '95%'
             });
 
-
           });
 
-          });
+    });
+};
 
-          // setTimeout(function(){
-          //   Waypoint.enableAll();
-          // }, 250);
-      };
+$( document ).ready(function() {
+    makeWayPoints();
+});

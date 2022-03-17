@@ -1,0 +1,236 @@
+[
+  {
+    "Comment#": 36,
+    "page_part": "Tears story text A2",
+    "specifics": "A strange collection of materials began gathering in the storehouse opened at the Winslow by the Federal Reserve Bank of San Francisco, custodian for the enemy-alien property.",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "OL-2",
+    "final_category": "Offensive language",
+    "caption_popup": "We would not refer to people's personal belongings as \"strange,\" because it marginalizes U.S. residents of Japanese heritage by implying that they and their property do not belong."
+  },
+  {
+    "Comment#": 1,
+    "page_part": "headline",
+    "specifics": "Ban on indirect picketing upheld",
+    "type of change (design, content, language, etc)": "design/typography",
+    "svg": "DL-1",
+    "final_category": "Design/layout",
+    "caption_popup": "This large headline is too big for the subject matter and isn't needed."
+  },
+  {
+    "Comment#": 8,
+    "page_part": "Tears story text A1",
+    "specifics": "having left voluntarily.",
+    "type of change (design, content, language, etc)": "inaccurate language",
+    "svg": "IL-3",
+    "final_category": "Inaccurate language",
+    "caption_popup": "We wouldn't use the word \"voluntarily.\" It is inaccurate to say that anyone forced to leave their home by a federal order is leaving \"voluntarily.\""
+  },
+  {
+    "Comment#": 11,
+    "page_part": "Tears story text A1",
+    "specifics": "One elderly woman was stricken with a heart attack as she awaited the ferry at Eagledale which was to take her to new surroundings in California.",
+    "type of change (design, content, language, etc)": "language to vague",
+    "svg": "IM-2",
+    "final_category": "Inaccuracy/misrepresentation",
+    "caption_popup": "The phrase \"new surroundings\" is too vague, inaccurately describing the facility these residents were sent to. We'd call it what it was: a concentration camp."
+  },
+  {
+    "Comment#": 12,
+    "page_part": "Tears story text A1",
+    "specifics": "It was accomplished in orderly fashion.",
+    "type of change (design, content, language, etc)": "story focus/perspective (content)",
+    "svg": "IM-3",
+    "final_category": "Inaccuracy/misrepresentation",
+    "caption_popup": "We would not use the term \"orderly fashion,\" which is a term often used to describe school lines or routine drills. It downplays the significance of this event and centers \"orderliness\" as the importance aspect of the forced removal and incarceration. We would ask the reporter to speak with more sources to center the stories and feelings of those being forced to leave."
+  },
+  {
+    "Comment#": 13,
+    "page_part": "Tears story text A1",
+    "specifics": "There were one or more soliders for each family.",
+    "type of change (design, content, language, etc)": "confusing language",
+    "svg": "IM-4",
+    "final_category": "Inaccuracy/misrepresentation",
+    "caption_popup": "The sentence \"there were one or more soldiers for each family\" is vague and inaccurate. We would edit this to more accurately explain the role of the soldiers on Bainbridge Island, which was to enforce compliance with the executive order. We would also ask the reporter for more information about how the soldiers treated the residents being forced to leave."
+  },
+  {
+    "Comment#": 15,
+    "page_part": "Tears story text A1",
+    "specifics": "Once aboard, the evacuees were given the run of the boat except for the lower deck.",
+    "type of change (design, content, language, etc)": "story focus/perspective (content)",
+    "svg": "LI-1",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "This detail is too vague and not related to what should be the focus of the story -- the experiences of those being forcibly removed. Today, we would ask that the reporter add more detail to indicate why this detail is important to the story or cut it."
+  },
+  {
+    "Comment#": 16,
+    "page_part": "Tears story text A1",
+    "specifics": "The Japanese by this time were smiling but there were many solider, including even officers, who had tears streaming down their",
+    "type of change (design, content, language, etc)": "confusing description",
+    "svg": "IL-5",
+    "final_category": "Inaccurate language",
+    "caption_popup": "At best, this is a confusing characterization that would raise flags today. At worst it is a racist depiction that dehumanizes and stereotypes the Japanese Americans who are being forced to leave their homes as naive while depicting the soldiers as emotionally complex. We would question this description's accuracy and require a rewrite as well as explanation or quotes from the soldiers and the people being forced to leave, so they could speak about their feelings themselves."
+  },
+  {
+    "Comment#": 21,
+    "page_part": "Top photo hed",
+    "specifics": "Sad Farewells - While Troops Stand By",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IM-6",
+    "final_category": "Inaccuracy/misrepresentation",
+    "caption_popup": "Again, we would not refer to the events of this day as \"farewells,\" which softened the forced, discriminatory nature of the policy."
+  },
+  {
+    "Comment#": 23,
+    "page_part": "Top photo caption",
+    "specifics": "The scene was typical as evacuation proceeded under Army supervison.",
+    "type of change (design, content, language, etc)": "inaccurate, quote person in photo",
+    "svg": "IM-7",
+    "final_category": "Inaccuracy/misrepresentation",
+    "caption_popup": "This caption is innacurate, so we wouldn't use it. It was not an \"evacuation under supervision,\" it was a forced eviction with an armed guard. We would also try to quote the woman in the photo about having to leave her home under armed guard."
+  },
+  {
+    "Comment#": 24,
+    "page_part": "Jump headline",
+    "specifics": "Tears, Smiles Mingle as Japs Bid Bainbridge Farewell",
+    "type of change (design, content, language, etc)": "inaccurate, racist",
+    "svg": "RL-4",
+    "final_category": "Racist language",
+    "caption_popup": "Just as we wouldn't run this headline on A1, we also wouldn't run it on the jump; it's racist and inaccurate."
+  },
+  {
+    "Comment#": 25,
+    "page_part": "Tears story text A2",
+    "specifics": "The Japanese had left their homes, in which some had lived for as many as 40 years.",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IL-7",
+    "final_category": "Inaccurate language",
+    "caption_popup": "We would not refer to people with this label which is inaccurate. We would write that \"Japanese Americans\" or \"people of Japanese heritage\" were singled out by Order 9066."
+  },
+  {
+    "Comment#": 26,
+    "page_part": "Tears story text A2",
+    "specifics": "\"I don't know, but we will be back.\"",
+    "type of change (design, content, language, etc)": "Content lacking/incomplete",
+    "svg": "LI-3",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "This story is lacking crucial information, such as whether the federal order had an end date when families could return, and whether the military communicated with families about where they were going."
+  },
+  {
+    "Comment#": 28,
+    "page_part": "Tears story text A2",
+    "specifics": "These friends, as well as soliders gave the departing Japanese every help.",
+    "type of change (design, content, language, etc)": "Content lacking/incomplete",
+    "svg": "LI-4",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "This line is too vague and generalizing. We would ask the reporter to specify what \"every help\" means and give specific examples. Today, we know that this was at best only partially accurate, as we know that many people took the removal as an opportunity to profit by stealing their incarcerated neighbors' property. We would require the reporter to balance the story by looking for examples of that."
+  },
+  {
+    "Comment#": 29,
+    "page_part": "Tears story text A2",
+    "specifics": "Ebaristo Arota a Filipino, remained on the island while his Japanese wife, Miki, sadly boarded the ferry.",
+    "type of change (design, content, language, etc)": "story structure",
+    "svg": "IL-8",
+    "final_category": "Inaccurate language",
+    "caption_popup": "We would not refer to the couple as \"a Filipino\" and \"Japanese wife\" which is inaccurate and implies they are not U.S. citizens or residents. We would also move their story up much higher in the story to illustrate how narrowly the order targeted people."
+  },
+  {
+    "Comment#": 30,
+    "page_part": "Tears story text A2",
+    "specifics": "Army officials said they were compelled to deny a request that either Arota be taken with the evacuees or Mrs. Arota be allowed to stay.",
+    "type of change (design, content, language, etc)": "Content lacking/incomplete",
+    "svg": "LI-5",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "This statement is too vague. Today, we would require the reporter to find out where this command originated and if it was part of the executive order to separate families of different ethnicities or nationalities."
+  },
+  {
+    "Comment#": 31,
+    "page_part": "Tears story text A2",
+    "specifics": "Yesterday was a busy one for the island's \"orphans of war,\" as they have designated themselves.",
+    "type of change (design, content, language, etc)": "Content lacking/incomplete, unverifiable",
+    "svg": "LI-6",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "We would include more detail about this designation \"orphans of war\" by quoting people who used this term for themselves or explaining what it meant, who used it and why."
+  },
+  {
+    "Comment#": 32,
+    "page_part": "Tears story text A2",
+    "specifics": "The island Japanese had set their affairs in order in eight short days, under Army orders.",
+    "type of change (design, content, language, etc)": "Content lacking/incomplete",
+    "svg": "LI-7",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "We would include more detail about why they had only eight days and what they had to do to be \"ready.\" We likely would have run a story in a previous issue about how residents made decisions about what to bring, and what and who they left behind."
+  },
+  {
+    "Comment#": 34,
+    "page_part": "Tears story text A2",
+    "specifics": "The minister expressed pride over the way members of his race accepted evaucation.",
+    "type of change (design, content, language, etc)": "story structure, framing",
+    "svg": "SF-3",
+    "final_category": "Story framing/focus (reporter bias)",
+    "caption_popup": "The phrase \"pride over the way members of his race accepted evacuation\" frames accepting relocation as something done by loyal Japanese Americans vs. (presumably) disloyal ones."
+  },
+  {
+    "Comment#": 37,
+    "page_part": "Tears story text A2",
+    "specifics": "A strange collection of materials began gathering in the storehouse opened at the Winslow by the Federal Reserve Bank of San Francisco, custodian for the enemy-alien property.",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "OL-3",
+    "final_category": "Offensive language",
+    "caption_popup": "We wouldn't use the criminalizing term \"enemy-alien\" because it makes the reader associate these residents with the term \"enemy\" even more. We do not use the term \"alien\" to refer to people, because it is an offensive and dehumanizing term that implies a person does not belong in the U.S."
+  },
+  {
+    "Comment#": 38,
+    "page_part": "Tears story text A2",
+    "specifics": "The Army made no arrangements for pets. This was a hard blow to many children who had to part with dogs and cats.",
+    "type of change (design, content, language, etc)": "story structure - emphasis",
+    "svg": "SF-5",
+    "final_category": "Story framing/focus (reporter bias)",
+    "caption_popup": "This passage conveys more sympathy for the loss of pets than for the displacement of people."
+  },
+  {
+    "Comment#": 39,
+    "page_part": "Tears story text A2",
+    "specifics": "They knew she couldn't however, and it appeared that one company might have a new mascot - a kitten.",
+    "type of change (design, content, language, etc)": "Content/editing",
+    "svg": "SF-4",
+    "final_category": "Story framing/focus (reporter bias)",
+    "caption_popup": "We would likely cut this anecdote. The upbeat tone of the anecdote, particularly about the \"new mascot\" contrasts offensively against the seriousness of the situation."
+  },
+  {
+    "Comment#": 40,
+    "page_part": "Tears story text A2",
+    "specifics": "Japanese are regretful but not biter about their departure.",
+    "type of change (design, content, language, etc)": "generalization, inaccurate",
+    "svg": "LI-9",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "The phrase \"regretful but not bitter\" is overgeneralized, and reinforces the \"model minority\" myth about Asian Americans. We would ask the reporter to find more sources that show the diversity of feelings and perspectives about the forced evacuation."
+  },
+  {
+    "Comment#": 41,
+    "page_part": "Photo caption",
+    "specifics": "Soliders guarded the ferry dock at Eagle Harbor as the island Japanese were evacuated.",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IL-9",
+    "final_category": "Inaccurate language",
+    "caption_popup": "We would not refer to the Bainbridge Island residents as \"island Japanese,\" which is inaccurate and implies that these residents are \"different,\" while the men with rifles are \"normal.\""
+  },
+  {
+    "Comment#": 42,
+    "page_part": "Solider photo",
+    "specifics": "",
+    "type of change (design, content, language, etc)": "",
+    "svg": "PS-3",
+    "final_category": "Photo selection",
+    "caption_popup": "We would not use this photo, because it looks very staged. Our photographers would try to capture photos of the events as they were actually happening."
+  },
+  {
+    "Comment#": 46,
+    "page_part": "Tears story text A2",
+    "specifics": "Ebaristo Arota a Filipino, remained on the island while his Japanese wife, Miki, sadly boarded the ferry.",
+    "type of change (design, content, language, etc)": "photo",
+    "svg": "PS-4",
+    "final_category": "Photo selection",
+    "caption_popup": "We would avoid using this photo because it appears to be posed instead of an authentic moment. This photo is also missing a caption to provide additional context and identify the people in the image. We would not publish this image without a caption."
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "Comment#": 43,
+    "page_part": "Freezes story text A2",
+    "specifics": "more than 100,000 Japanese, both alien and American-born, and another 150,000 enemy aliens were \"frozen\" to their home communities....",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "OL-4",
+    "final_category": "Offensive language",
+    "caption_popup": "\"Enemy aliens\" is not a term we would use today. The use of \"enemy\" here criminalizes all Japanese Americans."
+  },
+  {
+    "Comment#": 44,
+    "page_part": "Freezes story text A2",
+    "specifics": "All voluntary evacuations had ended today, and all aliens in the future must remain in their communities by daylight and their homes at night",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IL-10",
+    "final_category": "Inaccurate language",
+    "caption_popup": "We would not use the word \"voluntary\" to describe an evacuation that is being forced by an executive order. If this is a term the military is using, we would say so and note that this is an inaccurate description."
+  },
+  {
+    "Comment#": 45,
+    "page_part": "Freezes story text A2",
+    "specifics": "only a small minority of aliens along the coast had taken advantage of the voluntary evauation which allowed until the last midnight.",
+    "type of change (design, content, language, etc)": "story structure, framing",
+    "svg": "LI-10",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "We would include information about why many Japanese American residents were unable to leave during the \"voluntary\" period, including that many did not have a place outside the designated area to safely resettle, that many of their bank accounts had been frozen since 1941, and that many could not easily sell or lease their farms and businesses on such short notice. We would also mention the anti-Japanese-American sentiment in the areas where Japanese American residents were expected to resettle. \n *The Seattle Times collaborated with Densho to provide historical context for this annotation."
+  }
+]

@@ -24,46 +24,103 @@
       <!-- content goes here -->
       <div class="header">
         <img src="assets/social.jpg">
-        <h1>my header here</h1>
+        <h1>What we found when we examined our 1942 coverage of Executive Order 9066</h1>
         <h2>My subhead here</h2>
       </div>
       <div class="body-text">
-      <p class="byline">By Sara Jean Green</p>
+      <p class="byline">By <a href="https://www.seattletimes.com/author/crystal-paul/" target="_blank" rel="nofollow noreferrer noopener">Crystal Paul</a></p>
       <p class="staff-position">Seattle Times staff reporter</p>
+
+      <p>Project Editor’s Note: </p>
+
+      <p>In February 1942, a few short months after the attack at Pearl Harbor, President Franklin D. Roosevelt signed Executive Order 9066 designating Japanese Americans as “threats” to national security and requiring them to leave their homes on the West Coast to be incarcerated at concentration camps.</p>
+
+      <p>On March 30, 1942, Bainbridge Island became the first community where executive order 9066 was fully enforced and citizens and residents were forcibly removed from their homes and incarcerated. The Seattle Times (then known as The Seattle Daily Times) covered the events of that day in 1942 in three stories on the A1 (the front page) and A2 pages of our March 30 issue.</p>
+
+      <p>Eighty 80 years later, in an effort to take accountability for and learn from the harm caused by our coverage that day, The Times has revisited the stories, photos and headlines that told the story of that historic event in our pages.</p>
+
+      <p>We formed a team of journalists, editors, designers, news researchers and photo editors, and collaborated with local non-profit organization Densho, to scrutinize every word, caption, photo and design decision made in telling those stories. In our examination, we found that our 1942 coverage used racist slurs and stereotypes, inaccurate and offensive language, one-sided sourcing and framing perspective, and design and photo decisions photos and layouts that downplayed the significance of the events of that day.</p>
+
+      <p>We compiled these observations into notes on the 1942 pages, highlighting where each issue appears, then we categorized the issues identified and added these as tags in the annotations. Here, you will see the most glaring examples in each category.</p>
+
+      <p>In an effort to avoid further harm, we chose to remove the racist slurs in this print edition, but, in the interest of historical accuracy, you can find the original pages in our archive and in our online presentation where readers can opt-in to see the pages without those removals.</p>
+
+      <p>Our annotations identify the specific issues in our 1942 coverage and compare them to how we would cover this topic today. What we found highlights stark differences in our journalistic standards in 1942 versus today. We regret the enduring legacy of the racist practices documented in these pages, and we also acknowledge that racism is not a thing of the past, but we know The Seattle Times has continuing work to do as we aspire to provide accurate, sensitive, and inclusive coverage for all of our communities. This project has provided valuable insights that we hope will continue to inform and strengthen our journalism.</p>
+
+      <p>— Crystal Paul, project editor</p>
+      </div>
+
+
+
+      <div class="scroll-blocks">
+        <div class="svg">
+          <img src="../assets/A1-background-img.jpg">
+          <%= t.include("partials/A1-just-boxes.svg") %>
+
+          <button>Remove redactions</button>
+        </div>
+
+        <% var allComments = json.Overview_Story;
+            result = allComments.reduce(function (r, a) {
+                r[a.final_category] = r[a.final_category] || [];
+                r[a.final_category].push(a);
+                return r;
+            }, Object.create(null));
+
+            console.log(result);
+
+            Object.keys(result)
+              .forEach(function eachKey(key) {
+                NoSpaceKey = key.replace(/\s/g, '');
+                NoSpaceKey = NoSpaceKey.replace(/[^a-zA-Z ]/g, "");
+                console.log(NoSpaceKey);
+            %>
+
+            <div class="block <%= NoSpaceKey %>">
+              <div class="category <%= NoSpaceKey %>"><%= key %></div>
+              <% (result[key]).forEach(element => { %>
+                <div class="example">
+                  <div class="example_text"><div class="numberedCircle"><%= element.Comment %></div><%= element.caption_popup %></div>
+                  <div class="example_image"><img src="../assets/featured_jpgs/<%= element.svg %>.jpg"/></div>
+                </div>
+              <%  }); %>
+              </div>
+              <% }); %>
+
+      </div>
+
+      <div class="body-text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
+      </p>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
       </p>
       </div>
 
-      <div class="svg">
-        <%= t.include("partials/A1-reconsidered.svg") %>
-        <button>Remove redactions</button>
-      </div>
 
-      <div class="scroll-blocks">
-        <div class="block" data-id="1">
-          <div class="category red">Language</div>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl.
-          <div class="image">
-            <img src="assets/exampleHeadline.png"/>
-          </div>
-        </div>
+      <h2> IFraming a PDF </h2>
 
-        <div class="block" data-id="2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl.
-          <div class="image">
-            <img src="assets/exampleText.png"/>
-          </div>
-        </div>
 
-        <div class="block" data-id="3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl.
+      <iframe id="iframe" scrolling="yes" src="assets/A1-reconsidered-annotations.pdf" title="description"></iframe>
 
-          <div class="excerpt">
-            The evacuation was a credit the effieciency of the Army, it was a tragedy to the Japanese themselves and it was a said arrair for island residents, most of whom knew the Japanese personally.
-          </div>
-        </div>
-      </div>
+      <h2> IFraming an SVG </h2>
+
+      <iframe id="iframe" scrolling="yes" src="assets/A1-reconsidered.svg" title="description"></iframe>
 
 
       <%= t.include("partials/_navBottom.html") %>

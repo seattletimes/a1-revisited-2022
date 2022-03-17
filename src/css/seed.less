@@ -1,5 +1,43 @@
 @import "seattletimes";
 
+@photo: red;
+@lackOfInfo: blue;
+@inaccuracy: green;
+@sourcing: purple;
+@design: aqua;
+@slurs: pink;
+@inaccurate: orange;
+@offensive: gold;
+@framing: violet;
+
+svg text {
+  font-size: 40px;
+  text-anchor: start;
+  stroke: #000;
+  stroke-width: 2px;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-webkit-transition: opacity .5s ease-in-out;
+
+  &.show {
+    opacity: 1;
+  }
+}
+
+.st5,.st6,.st7,.st8,.st9,.st10,.st11,.st12,.st13 {
+  fill-opacity: 0;
+  transition: fill-opacity .5s ease-in-out;
+-moz-transition: fill-opacity .5s ease-in-out;
+-webkit-transition: fill-opacity .5s ease-in-out;
+
+  &.show {
+    fill-opacity: 0.7;
+  }
+}
+
+
+
 .header {
   max-width: 1000px;
   margin: auto;
@@ -12,13 +50,43 @@
   margin: auto;
 }
 
+#iframe {
+  width: 90%;
+  height: 90vh;
+  overflow: scroll;
+}
+
 .svg {
-  width: ~"calc((100vh * .72538) + 5px)";
+  width: ~"calc((100vh * .68) + 5px)";
   height: 100vh;
   position: sticky;
   top: 0;
+
+  img {
+    height: 100vh;
+    width: auto;
+    max-width: none;
+
+    @media @tablet {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media @tablet {
+    width: 100%;
+    z-index: -1;
+  }
   svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
+    @media @tablet {
+      width: 100%;
+      height: auto;
+    }
   }
   button {
     position: absolute;
@@ -43,30 +111,120 @@
   // width: 50%;
   // margin-left: 50%;
   // width: ~"calc(100 - (100vh * .72538))";
-  margin-left: ~"calc((100vh * .72538) + 20px)";
+
 
 
   .block {
     margin: 50vh auto;
-    background-color: #eee;
-    padding: 10px;
+    margin-left: ~"calc((100vh * .68) + 20px)";
+    font-family: @df-sans;
+    // background-color: #eee;
+    // padding: 10px;
     max-width: 600px;
 
-    .category {
-      padding: 5px;
-      color: white;
-      font-family: @df-sans;
-      &.red { background-color: #be2026; }
+    &.Photoselection {
+      background-color: rgba(255,228,175, 0.7);
+    }
+    &.Lackofinformationunderreporting {
+      background-color: rgba(221,162,143, 0.7);
+    }
+    &.Inaccuracymisrepresentation {
+      background-color: rgba(251,192,173, 0.7);
+    }
+    &.Sourcingerrors {
+      background-color: rgba(253,221,215, 0.7);
+    }
+    &.Designlayout {
+      background-color: rgba(255,236,205, 0.7);
+    }
+    &.Racistlanguage {
+      background-color: rgba(216,221,204, 0.7);
+    }
+    &.Inaccuratelanguage {
+      background-color: rgba(193,207,183, 0.7);
+    }
+    &.Offensivelanguage {
+      background-color: rgba(165,187,148, 0.7);
+    }
+    &.Storyframingfocusreporterbias {
+      background-color: rgba(229,216,207, 0.7);
     }
 
-    .excerpt {
-      // font-family: 'EB Garamond', serif;
-      font-family: 'IM Fell DW Pica', serif;
-      // font-family: 'Kadwa', serif;
-      // font-family: 'Rokkitt', serif;
-      background-color: #fff;
-      padding: 10px;
-      margin-top: 5px;
+    @media @tablet {
+      width: 100%;
+      margin-left: 0px;
     }
+
+    .category {
+      width: 100%;
+      padding: 10px 5px;
+      // color: white;
+      font-family: @df-sans;
+      font-weight: bold;
+
+      &.Photoselection {
+        background-color: rgba(255,228,175, 1);
+      }
+      &.Lackofinformationunderreporting {
+        background-color: rgba(221,162,143, 1);
+      }
+      &.Inaccuracymisrepresentation {
+        background-color: rgba(251,192,173, 1);
+      }
+      &.Sourcingerrors {
+        background-color: rgba(253,221,215, 1);
+      }
+      &.Designlayout {
+        background-color: rgba(255,236,205, 1);
+      }
+      &.Racistlanguage {
+        background-color: rgba(216,221,204, 1);
+      }
+      &.Inaccuratelanguage {
+        background-color: rgba(193,207,183, 1);
+      }
+      &.Offensivelanguage {
+        background-color: rgba(165,187,148, 1);
+      }
+      &.Storyframingfocusreporterbias {
+        background-color: rgba(229,216,207, 1);
+      }
+    }
+
+    .example {
+      .example_image {
+        max-width: 500px;
+        margin: auto;
+      }
+
+      .example_text {
+        // background-color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 5px;
+
+        .numberedCircle {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          font-size: 20px;
+          margin-right: 7px;
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          line-height: 1.1em;
+          border-radius: 50%;
+          text-align: center;
+        }
+      }
+    }
+
+    .example:nth-child(3n) {
+      margin-top: 2em;
+    }
+    .example:nth-child(4n) {
+      margin-top: 2em;
+    }
+
   }
 }

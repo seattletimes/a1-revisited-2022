@@ -1,0 +1,20 @@
+[
+  {
+    "Comment#": 17,
+    "page_part": "Inside page",
+    "specifics": "No Refunds for Japs, Says City",
+    "type of change (design, content, language, etc)": "design (story location)",
+    "svg": "RL-3",
+    "final_category": "Racist language",
+    "caption_popup": "We would not use this racist shorthand. We would likely include this high in the main story on A1 or in a sidebar about other such city government actions, with quotes from people who had to buy \"closing out\" licenses."
+  },
+  {
+    "Comment#": 18,
+    "page_part": "Refund story text A2",
+    "specifics": "The city will give no refunds on shop licenses of interned Japanese, City Comptroller W. C. Thomas and Chairmain James Scavotto of the City Council license committee said today.",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IL-6",
+    "final_category": "Inaccurate language",
+    "caption_popup": "The phrase \"interned Japanese\" is inaccurate. Many were U.S. citizens. We would replace the phrase with a more accurate description of who was being affected, something like \"local Japanese American business owners who are being forcibly incarcerated by order of EEO9066.\" The important part of this story is that these were U.S. citizens and residents being forcibly incarcerated by order of U.S. law -- a key fact we would foreground today."
+  }
+]
