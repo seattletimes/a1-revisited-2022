@@ -1,0 +1,67 @@
+[
+  {
+    "Comments": 17,
+    "specifics": "No Refunds for Japs, Says City",
+    "type of change (design, content, language, etc)": "design (story location)",
+    "svg": "RL-3",
+    "final_category": "Racist language",
+    "caption_popup": "We would not use this racist shorthand. We would likely include this high in the main story on A1 or in a sidebar about other such city government actions, with quotes from people who had to buy \"closing out\" licenses."
+  },
+  {
+    "Comments": 18,
+    "specifics": "The city will give no refunds on shop licenses of interned Japanese, City Comptroller W. C. Thomas and Chairmain James Scavotto of the City Council license committee said today.",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IL-6",
+    "final_category": "Inaccurate language",
+    "caption_popup": "The phrase \"interned Japanese\" is inaccurate. Many were U.S. citizens. We would replace the phrase with a more accurate description of who was being affected, something like \"local Japanese American business owners who are being forcibly incarcerated by order of EEO9066.\" The important part of this story is that these were U.S. citizens and residents being forcibly incarcerated by order of U.S. law -- a key fact we would foreground today."
+  },
+  {
+    "Comments": 43,
+    "specifics": "more than 100,000 Japanese, both alien and American-born, and another 150,000 enemy aliens were \"frozen\" to their home communities....",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "OL-4",
+    "final_category": "Offensive language",
+    "caption_popup": "\"Enemy aliens\" is not a term we would use today. The use of \"enemy\" here criminalizes all Japanese Americans."
+  },
+  {
+    "Comments": 44,
+    "specifics": "All voluntary evacuations had ended today, and all aliens in the future must remain in their communities by daylight and their homes at night",
+    "type of change (design, content, language, etc)": "language",
+    "svg": "IL-10",
+    "final_category": "Inaccurate language",
+    "caption_popup": "We would not use the word \"voluntary\" to describe an evacuation that is being forced by an executive order. If this is a term the military is using, we would say so and note that this is an inaccurate description."
+  },
+  {
+    "Comments": 45,
+    "specifics": "only a small minority of aliens along the coast had taken advantage of the voluntary evauation which allowed until the last midnight.",
+    "type of change (design, content, language, etc)": "story structure, framing",
+    "svg": "LI-10",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "We would include information about why many Japanese American residents were unable to leave during the \"voluntary\" period, including that many did not have a place outside the designated area to safely resettle, that many of their bank accounts had been frozen since 1941, and that many could not easily sell or lease their farms and businesses on such short notice. We would also mention the anti-Japanese-American sentiment in the areas where Japanese American residents were expected to resettle. \n *The Seattle Times collaborated with Densho to provide historical context for this annotation."
+  },
+  {
+    "Comments": 19,
+    "specifics": "He said he has only a few requests for refunds.",
+    "type of change (design, content, language, etc)": "Content",
+    "svg": "LI-2",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "Today we would ask the reporter to find data to back this up and examine if there are other potential causes for the lack of requests. "
+  },
+  {
+    "Comments": 20,
+    "specifics": "\"The city didn't put them out of business. Their own Japanese government put them out.\"",
+    "type of change (design, content, language, etc)": "inaccurate",
+    "svg": "IM-5",
+    "final_category": "Inaccuracy/misrepresentation",
+    "caption_popup": "This quote is hateful and inaccurate and we would either cut it or follow it immediately with a sentence or two explaining that this person's assessment is incorrect. U.S. citizens are not beholden to the Japanese government, and Japanese American business owners were being \"put out of business\" because of the executive order. We would also include quotes and perspectives from business owners who were stripped of their livelihoods and being denied refunds on licenses. This article would be expanded to include all of these important aspects.",
+    "undefined": "This quote is hateful and inaccurate and we would either cut it or follow it immediately with a sentence or two explaining that this person's assessment is incorrect. U.S. citizens are not beholden to the Japanese government, and Japanese American business owners were being \"put out of business\" because of the executive order. We would also include quotes and perspectives from business owners who were stripped of their livelihoods and being denied refunds on licenses. This article would be expanded to include all of these important aspects."
+  },
+  {
+    "Comments": 6,
+    "specifics": "Bainbridge island Japanese, alien and 'American-born alike,",
+    "type of change (design, content, language, etc)": "",
+    "svg": "OL-1",
+    "final_category": "Offensive language",
+    "caption_popup": "We would not use the term \"alien\" which is offensive and inaccurate."
+  }
+]

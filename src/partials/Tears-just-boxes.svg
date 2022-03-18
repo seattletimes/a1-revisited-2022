@@ -1,0 +1,87 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.3 1462.70007">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fdddd7;
+      }
+
+      .cls-2 {
+        fill: #dda28f;
+      }
+
+      .cls-3 {
+        fill: #fbc0ad;
+      }
+
+      .cls-4 {
+        fill: #e5d8cf;
+      }
+
+      .cls-5 {
+        fill: #a5bb94;
+      }
+
+      .cls-6 {
+        fill: #c1cfb7;
+      }
+
+      .cls-7 {
+        fill: #ffeccd;
+      }
+
+      .cls-8 {
+        fill: #d8ddcc;
+      }
+    </style>
+  </defs>
+  <g id="sourcingErrors">
+    <rect id="SE-2" class="cls-1" x="1.6" y="1145.30005" width="95.3" height="29.90002"/>
+    <rect id="SE-1" class="cls-1" x="2.2" y="711.29999" width="93.8" height="29.90002"/>
+  </g>
+  <g id="lackInformation">
+    <rect id="LI-8" class="cls-2" x="95.8" y="662.20001" width="94.7" height="50.29999"/>
+    <rect id="LI-3" class="cls-2" x="1.1" y="656.59998" width="93.8" height="11.59998"/>
+    <rect id="LI-4" class="cls-2" x="2.2" y="829.29999" width="94.69999" height="15.79999"/>
+    <rect id="LI-5" class="cls-2" x="1.1" y="931.79999" width="94.7" height="21.59998"/>
+    <rect id="LI-6" class="cls-2" x="1.1" y="955.20001" width="94.7" height="15.59998"/>
+    <rect id="LI-7" class="cls-2" x="1.1" y="971.70001" width="94.7" height="15.5"/>
+    <rect id="LI-9" class="cls-2" x="97.3" y="1175.19995" width="97" height="10.90002"/>
+    <rect id="LI-1" class="cls-2" x="92.9" y="133.3" width="100.99999" height="14.39999"/>
+  </g>
+  <g id="inaccuracyMisrepresentation">
+    <rect id="IM-2" class="cls-3" x="1.6" y="168.3" width="91.3" height="10.3"/>
+    <polygon id="IM-3" class="cls-3" points="193.9 111 103.9 110.9 103.9 115.1 92.9 115.1 92.9 104.7 193.9 104.7 193.9 111"/>
+    <polygon id="IM-4" class="cls-3" points="193.9 115.8 148.8 115.6 148.8 120.4 92.9 120.4 92.9 115.1 103.9 115.1 103.9 111 193.9 111 193.9 115.8"/>
+  </g>
+  <g id="storyFraming">
+    <rect id="SF-5" class="cls-4" x="95.8" y="1018.79999" width="96.7" height="10.89996"/>
+    <rect id="SF-4" class="cls-4" x="96.9" y="1152" width="96.80001" height="22"/>
+    <rect id="SF-3" class="cls-4" x="94.9" y="586.59998" width="95.7" height="17.5"/>
+    <rect id="SF-2" class="cls-4" x="0.4" y="142.5" width="92.4" height="10.3"/>
+    <rect id="SF-1" class="cls-4" x="0.4" y="110.9" width="92.4" height="11"/>
+  </g>
+  <g id="offensiveLanguage">
+    <rect id="OL-2" class="cls-5" x="95.8" y="942.70001" width="96.7" height="5.5"/>
+    <rect id="OL-3" class="cls-5" x="132.2" y="964.59998" width="60.3" height="5.5"/>
+  </g>
+  <g id="inaccurateLanguage">
+    <rect id="IL-8" class="cls-6" x="1.1" y="906.90002" width="94.7" height="21.59998"/>
+    <rect id="IL-7" class="cls-6" x="0.6" y="589.40002" width="94.3" height="16.79999"/>
+    <rect id="IL-9" class="cls-6" x="8.9" y="549.70001" width="161.6" height="5"/>
+    <rect id="IL-5" class="cls-6" x="92.9" y="174.39999" width="100.99999" height="21.39999"/>
+    <rect id="IL-1" class="cls-6" width="193.8" height="46.9"/>
+    <polygon id="IL-4" class="cls-6" points="193.9 132.1 92.9 132.1 92.9 121.4 150.5 121.4 150.5 116.3 193.9 116.3 193.9 132.1"/>
+    <rect id="IL-2" class="cls-6" y="56.6" width="91.7" height="12.8"/>
+    <rect id="IL-3" class="cls-6" y="100" width="92.7" height="9.9"/>
+  </g>
+  <g id="photoSelection">
+    <rect id="PS-3" class="cls-7" x="2.6" y="391.89999" width="188.4" height="157.80002"/>
+    <rect id="IM-7" class="cls-3" x="9.3" y="380.39999" width="143.80001" height="4.20001"/>
+    <rect id="PS-2" class="cls-7" x="1.9" y="231.89999" width="188.19999" height="146.89999"/>
+    <rect id="IM-6" class="cls-3" x="0.1" y="218.3" width="192.60001" height="10.7"/>
+    <rect id="PS-4" class="cls-7" x="3.2" y="1241.80005" width="185.3" height="220.90002"/>
+  </g>
+  <g id="racistLangauge">
+    <rect id="RL-2" class="cls-8" x="0.4" y="73.8" width="92.4" height="15.6"/>
+  </g>
+</svg>

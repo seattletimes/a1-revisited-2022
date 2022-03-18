@@ -10,6 +10,7 @@
     <% if (json.project.production && !json.project.embedded) { %>
       <%= t.include("partials/_gtm.html") %>
     <% } %>
+    <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=IM+Fell+DW+Pica&family=IM+Fell+DW+Pica&family=Kadwa&display=swap" rel="stylesheet">
@@ -101,26 +102,29 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
       </p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
       </div>
 
+      <div class="secondSvg">
+        <img src="../assets/Tears2col800.png"/>
+        <%= t.include("partials/Tears-just-boxes.svg") %>
 
-      <h2> IFraming a PDF </h2>
+        <div id="tearsPopup">
+          <button class="close"><i class="fas fa-times-circle"></i></button>
+          <div id="tears-label"></div>
+          <div class="comment"></div>
+        </div>
+      </div>
 
+      <div class="thirdSvg">
+        <img src="../assets/RefundsFreeze.png"/>
+        <%= t.include("partials/RefundsFreezeJustBoxes.svg") %>
 
-      <iframe id="iframe" scrolling="yes" src="assets/A1-reconsidered-annotations.pdf" title="description"></iframe>
-
-      <h2> IFraming an SVG </h2>
-
-      <iframe id="iframe" scrolling="yes" src="assets/A1-reconsidered.svg" title="description"></iframe>
+        <div id="refundsFreezesPopup">
+          <button class="close"><i class="fas fa-times-circle"></i></button>
+          <div id="refunds-label"></div>
+          <div class="comment"></div>
+        </div>
+      </div>
 
 
       <%= t.include("partials/_navBottom.html") %>

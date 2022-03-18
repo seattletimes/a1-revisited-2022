@@ -1,0 +1,56 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 733.1 1247.09995">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dda28f;
+      }
+
+      .cls-2 {
+        fill: #fbc0ad;
+      }
+
+      .cls-3 {
+        fill: #d8ddcc;
+      }
+
+      .cls-4 {
+        fill: #c1cfb7;
+      }
+
+      .cls-5 {
+        fill: #a5bb94;
+      }
+
+      .justMe {
+        fill: #fff;
+        isolation: isolate;
+        opacity: 0.7;
+      }
+    </style>
+  </defs>
+  <g id="allPopups">
+    <g id="lackInformation">
+      <rect id="LI-2" class="cls-1" y="340" width="306.39999" height="50.29999"/>
+    </g>
+    <g id="inaccuracyMisrepresentation">
+      <rect id="IM-5" class="cls-2" y="417" width="306.39999" height="45.70001"/>
+    </g>
+    <g id="racistLangauge">
+      <rect id="RL-3" class="cls-3" width="306.39999" height="164.7"/>
+    </g>
+    <g id="inaccurateLanguage">
+      <rect id="IL-6" class="cls-4" y="176.2" width="306.39999" height="35.7"/>
+    </g>
+    <g id="lackInformation-2" data-name="lackInformation">
+      <rect id="LI-10" class="cls-1" x="401.30001" y="482" width="331.79999" height="45.69998"/>
+    </g>
+    <g id="offensiveLanguage">
+      <rect id="OL-1" class="cls-5" x="401.30001" y="16.5" width="328" height="175.3"/>
+      <rect id="OL-4" class="cls-5" x="401.30001" y="217.50001" width="328" height="46"/>
+    </g>
+    <g id="inaccurateLanguage-2" data-name="inaccurateLanguage">
+      <rect id="IL-10" class="cls-4" x="401.30001" y="335" width="328" height="13.96126"/>
+    </g>
+  </g>
+  <rect class="justMe" x="306.39999" y="33.6" width="94.89999" height="1213.49995"/>
+</svg>
