@@ -9,7 +9,12 @@ require('waypoints/lib/noframework.waypoints.min');
 const refundFreezeData = require('../../data/RefundsAndFreeze.sheet.json');
 const tearsData = require('../../data/Tears.sheet.json');
 
-console.log(refundFreezeData);
+// console.log(refundFreezeData);
+
+var windowWidth = $('.scroll-blocks').width();
+console.log(windowWidth);
+
+var triggerFadeIn = windowWidth > 500 ? '60%' : '120%';
 
 function makeWayPoints() {
   $('.scroll-blocks .block').each((index, element) => {
@@ -29,7 +34,7 @@ function makeWayPoints() {
                   else if (direction === "up") {
                   }
                 },
-                offset: '60%'
+                offset: triggerFadeIn
             });
 
             new Waypoint({
@@ -53,6 +58,7 @@ function makeWayPoints() {
 };
 
 $( document ).ready(function() {
+    var tearsWidth = $('.secondSvg img').width();
     makeWayPoints();
 
 
@@ -72,21 +78,25 @@ $( document ).ready(function() {
           $('#refundsFreezesPopup #refunds-label').removeClass();
 
           var top = $(this).attr('y');
-          var left = $(this).attr('x');
+          var left = $(this).attr('x') > 300 ? 300 : 100;
+          left = tearsWidth > 500 ? left : 0;
+          var ratio = tearsWidth / 733.1;
 
           $('#refundsFreezesPopup #refunds-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
           $('#refundsFreezesPopup .comment').empty().append(element.caption_popup);
-          $('#refundsFreezesPopup').css("top", `${top}px`);
-          $('#refundsFreezesPopup').css("left", `${left / 2}px`);
+          $('#refundsFreezesPopup').css("top", `${top * ratio}px`);
+          $('#refundsFreezesPopup').css("left", `${left}px`);
           $('#refundsFreezesPopup').addClass('show');
 
         } else {}
       });
     });
 
-    $( ".secondSvg svg rect" ).click(function() {
+    $( ".secondSvg svg rect" ).click(function(e) {
       var id = $(this).attr('id');
       $( ".secondSvg svg rect" ).removeClass('show');
+
+
 
       tearsData.forEach(element => {
         if (element.svg === id) {
@@ -99,17 +109,26 @@ $( document ).ready(function() {
           $('tearsPopup').removeClass();
           $('#tearsPopup #tears-label').removeClass();
 
-          var object = this.getBoundingClientRect();
+          var gCon = $(this).closest( "g" );
+          var object = gCon[0].getBoundingClientRect();
           console.log(object);
 
-          // var top = $(this).attr('y');
-          // var left = $(this).attr('x');
-          var top = object.top;
-          var left = object.x;
+          var chosenRect = this.getBoundingClientRect();
+
+          var top = $(this).attr('y');
+          var left = $(this).attr('x') > 90 ? 300 : 100;
+          left = tearsWidth > 500 ? left : 0;
+          var height = $(this).attr('height');
+          // var top = object.top;
+          // var left = object.x;
+
+          var ratio = tearsWidth / 194.3;
+
+          // var left = e.clientX > (tearsWidth/2) ? (tearsWidth/2) : e.clientX;
 
           $('#tearsPopup #tears-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
           $('#tearsPopup .comment').empty().append(element.caption_popup);
-          $('#tearsPopup').css("top", `${top}px`);
+          $('#tearsPopup').css("top", `${top * ratio}px`);
           $('#tearsPopup').css("left", `${left}px`);
           $('#tearsPopup').addClass('show');
 

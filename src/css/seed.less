@@ -1,4 +1,5 @@
 @import "seattletimes";
+@import "comments";
 
 @photo: red;
 @lackOfInfo: blue;
@@ -10,9 +11,14 @@
 @offensive: gold;
 @framing: violet;
 
+.marketing.marketing--sidebar { margin: auto; }
 
-
-
+h1 {
+  font-size: 3em;
+  @media @mobile {
+    font-size: 32px;
+  }
+}
 
 
 
@@ -157,7 +163,35 @@
 
     @media @tablet {
       width: 100%;
-      margin-left: 0px;
+      margin: 130vh auto;
+
+      &.Photoselection {
+        background-color: rgba(255,228,175, 0.9);
+      }
+      &.Lackofinformationunderreporting {
+        background-color: rgba(221,162,143, 0.9);
+      }
+      &.Inaccuracymisrepresentation {
+        background-color: rgba(251,192,173, 0.9);
+      }
+      &.Sourcingerrors {
+        background-color: rgba(253,221,215, 0.9);
+      }
+      &.Designlayout {
+        background-color: rgba(255,236,205, 0.9);
+      }
+      &.Racistlanguage {
+        background-color: rgba(216,221,204, 0.9);
+      }
+      &.Inaccuratelanguage {
+        background-color: rgba(193,207,183, 0.9);
+      }
+      &.Offensivelanguage {
+        background-color: rgba(165,187,148, 0.9);
+      }
+      &.Storyframingfocusreporterbias {
+        background-color: rgba(229,216,207, 0.9);
+      }
     }
 
     .category {
@@ -166,6 +200,10 @@
       // color: white;
       font-family: @df-sans;
       font-weight: bold;
+
+      @media @tablet {
+        border-bottom: 1px solid @df-dark-gray;
+      }
 
       &.Photoselection {
         background-color: rgba(255,228,175, 1);
@@ -232,6 +270,10 @@
     }
 
   }
+
+  .block:last-child {
+    margin-bottom: 10vh;
+  }
 }
 
 .thirdSvg {
@@ -273,6 +315,11 @@
     background-color: white;
     border: 1px solid black;
     // padding: 10px;
+
+    @media @mobile {
+      right: 0;
+      margin: auto;
+    }
 
 
     &.show {
@@ -370,6 +417,11 @@
     background-color: white;
     border: 1px solid black;
     // padding: 10px;
+
+    @media @mobile {
+      right: 0;
+      margin: auto;
+    }
 
 
     &.show {

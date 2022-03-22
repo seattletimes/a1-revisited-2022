@@ -6,13 +6,13 @@
     "caption_popup": "This large headline is too big for the subject matter and isn't needed."
   },
   {
-    "specifics": "",
+    "specifics": "Tears, Smiles Mingle as Japs Bid Bainbridge Farewell",
     "svg": "IL-1",
     "final_category": "Inaccurate language",
     "caption_popup": "This language downplays the forced nature and extraorindary situation of the exclusion order. Today, we would use language that makes it clear that Japanese American Bainbridge residents were being forced to leave their homes due to a racist federal policy."
   },
   {
-    "specifics": "",
+    "specifics": "Bainbridge island Japanese, alien and 'American-born alike,",
     "svg": "IL-2",
     "final_category": "Inaccurate language",
     "caption_popup": "The use of the term \"Japanese\" throughout this story is not accurate and emphasizes \"foreignness.\" We would also avoid the term \"alien,\" which is offensive and inaccurate. We would accurately describe them as Japanese Americans and Bainbridge Island residents."
@@ -24,7 +24,7 @@
     "caption_popup": "We wouldn't use the word \"voluntarily.\" It is inaccurate to say that anyone forced to leave their home by a federal order is leaving \"voluntarily.\""
   },
   {
-    "specifics": "",
+    "specifics": "The soliders courteously escorted the Japanese aboard the ferry.",
     "svg": "IL-4",
     "final_category": "Inaccurate language",
     "caption_popup": "This language misrepresents the reality of the situation. We would accurately represent the soldiers' role as armed guards there to enact the executive order forcing of U.S. residents and citizens from their homes."
@@ -120,6 +120,12 @@
     "caption_popup": "We would include more detail about why they had only eight days and what they had to do to be \"ready.\" We likely would have run a story in a previous issue about how residents made decisions about what to bring, and what and who they left behind."
   },
   {
+    "specifics": "A scene reminiscent of a Midwest farm auction was enacted yesterday at the Kitayama Greenhouse and Gardens at Pleasant Beach.",
+    "svg": "LI-8",
+    "final_category": "Lack of information/under reporting",
+    "caption_popup": "Accounts from those incarcerated indicate that these descriptions of events are inaccurate and fail to mention the large financial losses to those whose belongings were sold at bargain prices, stolen, or destroyed and the fact that Japanese Americans were reclassified as 4C (enemy aliens) and barred from military service. The Seattle Times collaborated with Densho to provide historical context for this annotation."
+  },
+  {
     "specifics": "Japanese are regretful but not biter about their departure.",
     "svg": "LI-9",
     "final_category": "Lack of information/under reporting",
@@ -139,6 +145,12 @@
   },
   {
     "specifics": "",
+    "svg": "PS-2",
+    "final_category": "Photo selection",
+    "caption_popup": "We would not use these photos today because they appear staged and misleading. We emphasize true, documentary moments. When we ask people to pose for portraits, we ensure that the image is clearly a portrait and work with the person on how they are depicted, including whether they want to smile. These images fail to meet those standards. If we would have used a photo of soldiers, we would have reduced the size in order to place more emphasis on the people who are most impacted. "
+  },
+  {
+    "specifics": "",
     "svg": "PS-3",
     "final_category": "Photo selection",
     "caption_popup": "We would not use this photo, because it looks very staged. Our photographers would try to capture photos of the events as they were actually happening."
@@ -148,12 +160,6 @@
     "svg": "PS-4",
     "final_category": "Photo selection",
     "caption_popup": "We would avoid using this photo because it appears to be posed instead of an authentic moment. This photo is also missing a caption to provide additional context and identify the people in the image. We would not publish this image without a caption."
-  },
-  {
-    "specifics": "",
-    "svg": "PS-2",
-    "final_category": "Photo selection",
-    "caption_popup": "We would not use these photos today because they appear staged and misleading. We emphasize true, documentary moments. When we ask people to pose for portraits, we ensure that the image is clearly a portrait and work with the person on how they are depicted, including whether they want to smile. These images fail to meet those standards. If we would have used a photo of soldiers, we would have reduced the size in order to place more emphasis on the people who are most impacted. "
   },
   {
     "specifics": "",
@@ -196,5 +202,17 @@
     "svg": "SF-5",
     "final_category": "Story framing/focus (reporter bias)",
     "caption_popup": "This passage conveys more sympathy for the loss of pets than for the displacement of people."
+  },
+  {
+    "specifics": "He told about Harry Hiroshita, who was known in the early part of the century as \"Slabwood Harry.\"",
+    "svg": "SE-1",
+    "final_category": "Sourcing errors",
+    "caption_popup": "Today we would center and seek quotes from those who were the most impacted -- the residents who were being forcibly removed."
+  },
+  {
+    "specifics": "\"What has to be, has to be,\" said Mr. Hirakawa, smiling.",
+    "svg": "SE-2",
+    "final_category": "Sourcing errors",
+    "caption_popup": "Of the three Japanese American residents quoted in this story all of them (except the little girl who can't bring her kitten) are quoted as being eager to help the war effort by leaving or accepting the situation. We would recognize this today as an unbalanced perspective and one which may be influenced by fear of retaliation or of appearing to be against the U.S. government at a time of high anti-Japanese sentiment. Given this difficulty, we would offer anonymity to those sources, seek out sources with different perspectives and consider ways to protect sources willing to share perspectives that could endanger them. We would also plan follow-up stories that investigated the conditions at the incarceration camps."
   }
 ]
