@@ -24,13 +24,13 @@
       <%= t.include("partials/_ad.html", {number: 1}) %>
 
       <div class="header">
-        <img src="./assets/social.jpg">
         <h1>What we found when we examined our 1942 coverage of Executive Order 9066</h1>
-        <h2>My subhead here</h2>
+        <img src="./assets/A1-revisit-double.jpg">
       </div>
+
       <div class="body-text">
-      <p class="byline">By <a href="https://www.seattletimes.com/author/crystal-paul/" target="_blank" rel="nofollow noreferrer noopener">Crystal Paul</a></p>
-      <p class="staff-position">Seattle Times staff reporter</p>
+      <p class="byline">By <a href="https://www.seattletimes.com/author/crystal-paul/" target="_blank">Crystal Paul</a> and <a href="https://www.seattletimes.com/author/emily-m-eng" target="_blank">Emily M. Eng</a></p>
+      <p class="staff-position">Seattle Times editors</p>
 
       <p>Project Editor’s Note: </p>
 
@@ -51,14 +51,44 @@
       <p>— Crystal Paul, project editor</p>
       </div>
 
+      <div class="thin-div"></div>
 
+      <div class="section">
+        <h2>Our changes by category</h2>
+        <div class="graphic-chatter">
+          Here, you will see the most glaring examples in each category.
+        </div>
+
+        <div class="change-table">
+          <ul>
+            PRESENTATION/STRUCTURE CHANGES
+            <li>Design/layout</li>
+            <li>Photo selection</li>
+            <li>Story framing/focus (reporter bias)</li>
+          </ul>
+
+          <ul>
+            REPORTING CHANGES
+            <li>Lack of information/under reporting</li>
+            <li>Inaccuracy/misrepresentation</li>
+            <li>Sourcing errors</li>
+          </ul>
+
+          <ul>
+            LANGUAGE CHANGES
+            <li>Racist language (slurs)</li>
+            <li>Inaccurate language</li>
+            <li>Offensive language</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="scroll-blocks">
         <div class="svg">
-          <img src="./assets/A1-background-img.jpg">
+          <img src="./assets/A1-background-img.jpg" alt="annotated image of the original pages with numbered comments">
           <%= t.include("partials/A1-just-boxes.svg") %>
 
-          <button>Remove redactions</button>
+          <button>View original (includes graphic language) </button>
         </div>
 
         <% var allComments = json.Overview_Story;
@@ -68,13 +98,13 @@
                 return r;
             }, Object.create(null));
 
-            console.log(result);
+            <!-- console.log(result); -->
 
             Object.keys(result)
               .forEach(function eachKey(key) {
                 NoSpaceKey = key.replace(/\s/g, '');
                 NoSpaceKey = NoSpaceKey.replace(/[^a-zA-Z ]/g, "");
-                console.log(NoSpaceKey);
+                <!-- console.log(NoSpaceKey); -->
             %>
 
             <div class="block <%= NoSpaceKey %>">
@@ -93,26 +123,55 @@
       <%= t.include("partials/_ad.html", {number: 3}) %>
 
       <div class="body-text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
+      <!-- <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "sidebar"}) %> -->
 
-      <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "sidebar"}) %>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec porttitor sapien. Nam rutrum vel sem ac consequat. Etiam a elit accumsan, scelerisque turpis et, sollicitudin urna. Nullam vel hendrerit nisl. Curabitur feugiat sem non elit mattis, vitae blandit eros finibus. Ut sed facilisis orci, sit amet eleifend lectus. Sed mauris sapien, lobortis sit amet tristique et, feugiat at magna. Curabitur in ipsum ac purus bibendum commodo. Morbi luctus sed lectus vel cursus. Donec eget ex nec erat congue blandit. Proin sagittis ac nisi quis fermentum. Vivamus at risus id leo condimentum interdum. Maecenas cursus sit amet velit sed consectetur. Curabitur quam nibh, facilisis vel rhoncus maximus, varius vitae ex. Phasellus ut ante et dui vehicula fermentum. Sed consectetur, justo at venenatis pulvinar, nibh magna iaculis erat, in fringilla lectus erat ut sapien.
-      </p>
       </div>
 
+      <div class="thin-div"></div>
+
       <div class="buttonCon">
-        <h2>Explore the Seattle Times' archived stories here</h2>
-        <button id="tears" data-id="tears">Tears, Smiles Mingle as Japs Bid Bainbridge Farewell</button>
-        <button id="refunds" data-id="refunds">No Refunds for Japs, Says City / Order 'Freezes' Aliens on Coast</button>
-        <button id="a1-top" data-id="top">A1 Headlines</button>
+        <h2>Download the original 1942 pages</h2>
+
+        <div class="flex-group">
+          <div class="flex">
+            <button>Archive pages (includes graphic language) </button>
+            <img src="assets/A1-background-img.jpg">
+          </div>
+
+          <div class="flex">
+            <button>Redacted pages</button>
+            <img src="assets/A1-background-img.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="thin-div"></div>
+
+   <!--  sticky nav here with color key of categories -->
+
+      <div class="buttonCon">
+        <h2>Explore all the annotations by story</h2>
+        <div class="graphic-chatter">
+          We found 44 issues in our original reporting.
+        </div>
+
+        <div class="chatter caption">Select the highlighted text in each story to view our annotations.</div>
+
+        <div class="flex-group">
+          <div class="flex">
+            <button id="a1-top" data-id="top">Top of A1 page</button>
+          </div>
+
+          <div class="flex">
+            <button id="tears" data-id="tears">Tears, Smiles Mingle as [slur] Bid Bainbridge Farewell</button>
+          </div>
+
+          <div class="flex">
+            <button id="refunds" data-id="refunds">No Refunds for [slur], Says City / Order 'Freezes' Aliens on Coast</button>
+          </div>
+        </div>
+
       </div>
 
       <div id="allStories">
@@ -150,8 +209,6 @@
         </div>
       </div>
 
-
-
       <%= t.include("partials/_ad.html", {number: 2}) %>
 
 
@@ -169,8 +226,6 @@
         		<p class="project-credit"><strong>Editing: </strong>Laura Gordon, Rami Grunbaum and Frank Mina</p>
         </section>
       </div>
-
-      <%= t.include("partials/_comments.html") %>
 
 
       <%= t.include("partials/_navBottom.html") %>
