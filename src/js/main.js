@@ -8,6 +8,7 @@ require('waypoints/lib/noframework.waypoints.min');
 
 const refundFreezeData = require('../../data/RefundsAndFreeze.sheet.json');
 const tearsData = require('../../data/Tears.sheet.json');
+const topData = require('../../data/Top.sheet.json');
 
 // console.log(refundFreezeData);
 
@@ -61,7 +62,6 @@ $( document ).ready(function() {
     var tearsWidth = $('.secondSvg img').width();
     makeWayPoints();
 
-
     $( ".thirdSvg svg #allPopups rect" ).click(function() {
       var id = $(this).attr('id');
       $( ".thirdSvg svg #allPopups rect" ).removeClass('show');
@@ -96,12 +96,10 @@ $( document ).ready(function() {
       });
     });
 
+
     $( ".secondSvg svg rect" ).click(function(e) {
       var id = $(this).attr('id');
       $( ".secondSvg svg rect" ).removeClass('show');
-
-
-
       tearsData.forEach(element => {
         if (element.svg === id) {
           $(this).addClass('show');
@@ -145,6 +143,46 @@ $( document ).ready(function() {
       });
     });
 
+      $( ".fourthSvg svg rect" ).click(function(e) {
+        var id = $(this).attr('id');
+        $( ".fourthSvg svg rect" ).removeClass('show');
+        topData.forEach(element => {
+          if (element.svg === id) {
+            $(this).addClass('show');
+
+            var label = element.final_category;
+            var noSpaceKey = label.replace(/\s/g, '');
+            noSpaceKey = noSpaceKey.replace(/[^a-zA-Z ]/g, "");
+
+            $('#topPopup').removeClass();
+            $('#topPopup #top-label').removeClass();
+            var chosenRect = this.getBoundingClientRect();
+
+            var top_top = $(this).attr('y');
+            var left_top = $(this).attr('x') > 90 ? 300 : 100;
+            left_top = tearsWidth > 500 ? left_top : 0;
+            var height_top = $(this).attr('height');
+            console.log(height_top);
+            // var top = object.top;
+
+            // var left = object.x;
+
+            var top_ratio = tearsWidth / 650;
+
+            var offsetTop_Top = (top_top * top_ratio);
+
+            $('#topPopup #top-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
+            $('#topPopup .comment').empty().append(element.caption_popup);
+            $('#topPopup').css("top", `${offsetTop_Top}px`);
+            $('#topPopup').css("left", `${left_top}px`);
+            $('#topPopup').addClass('show');
+
+          } else {}
+        });
+      });
+
+
+
 
     $( "#refundsFreezesPopup .close" ).click(function() {
       $('#refundsFreezesPopup').removeClass('show');
@@ -154,5 +192,23 @@ $( document ).ready(function() {
     $( "#tearsPopup .close" ).click(function() {
       $('#tearsPopup').removeClass('show');
       $( ".secondSvg svg rect" ).removeClass('show');
+    });
+
+    $( "#topPopup .close" ).click(function() {
+      $('#topPopup').removeClass('show');
+      $( ".fourthSvg svg rect" ).removeClass('show');
+    });
+
+    $( ".buttonCon button" ).click(function() {
+      $( ".buttonCon button" ).removeClass('show');
+      $( ".story" ).removeClass('show');
+      $( this ).addClass('show');
+      var findID = $( this).data('id');
+      $( '#allStories' ).find(`.story[data-id='${findID}']`).addClass('show');
+      var setHeight = $( '#allStories' ).find(`.story[data-id='${findID}']`).height();
+      $('#allStories').height(setHeight);
+
+
+
     });
 });

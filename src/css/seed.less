@@ -20,6 +20,29 @@ h1 {
   }
 }
 
+.buttonCon {
+  max-width: 920px;
+  margin: 0px auto 5px auto;
+  padding: 0px 10px;
+  text-align: center;
+
+  button {
+    background: #0777b3;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+
+    &.show {
+      background-color: #134763;
+    }
+  }
+}
+
 
 
 .header {
@@ -119,12 +142,6 @@ h1 {
 }
 
 .scroll-blocks {
-  // width: 50%;
-  // margin-left: 50%;
-  // width: ~"calc(100 - (100vh * .72538))";
-
-
-
   .block {
     margin: 50vh auto;
     margin-left: ~"calc((100vh * .68) + 20px)";
@@ -276,14 +293,108 @@ h1 {
   }
 }
 
-.thirdSvg {
+#allStories {
+  position: relative;
   width: 100%;
   max-width: 900px;
   margin: auto;
-  position: relative;
+  overflow: hidden;
+}
+
+.secondSvg, .thirdSvg, .fourthSvg {
+  visibility: hidden;
+  position: absolute;
+  &.show { visibility: inherit; }
+
+  .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8 {
+      cursor: pointer;
+      fill-opacity: 0.4;
+      transition: fill-opacity .5s ease-in-out;
+    -moz-transition: fill-opacity .5s ease-in-out;
+    -webkit-transition: fill-opacity .5s ease-in-out;
+
+      &.show {
+        stroke: black;
+        stroke-width: 3px;
+      }
+   }
+
   img {
     width: 100%;
   }
+}
+
+#refundsFreezesPopup, #topPopup, #tearsPopup  {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid black;
+  // padding: 10px;
+
+  @media @mobile {
+    right: 0;
+    margin: auto;
+  }
+
+  &.show {
+    display: block;
+  }
+
+  [data-label="label"]  {
+    width: 100%;
+    padding: 10px;
+    // color: white;
+    font-family: @df-sans;
+    font-weight: bold;
+
+    &.Photoselection {
+      background-color: rgba(255,228,175, 1);
+    }
+    &.Lackofinformationunderreporting {
+      background-color: rgba(221,162,143, 1);
+    }
+    &.Inaccuracymisrepresentation {
+      background-color: rgba(251,192,173, 1);
+    }
+    &.Sourcingerrors {
+      background-color: rgba(253,221,215, 1);
+    }
+    &.Designlayout {
+      background-color: rgba(255,236,205, 1);
+    }
+    &.Racistlanguage {
+      background-color: rgba(216,221,204, 1);
+    }
+    &.Inaccuratelanguage {
+      background-color: rgba(193,207,183, 1);
+    }
+    &.Offensivelanguage {
+      background-color: rgba(165,187,148, 1);
+    }
+    &.Storyframingfocusreporterbias {
+      background-color: rgba(229,216,207, 1);
+    }
+  }
+
+  .comment {
+    font-family: @df-sans;
+    padding: 10px;
+  }
+
+  .close {
+    padding-top: 5px;
+    background-color: transparent;
+    border: none;
+    float: right;
+    font-size: 1.5em;
+    color: @df-blue;
+  }
+}
+
+.thirdSvg {
     svg {
       position: absolute;
       top: 2%;
@@ -291,195 +402,28 @@ h1 {
       width: 100%;
       height: auto;
   }
-
-  .cls-1,.cls-2,.cls-3,.cls-4,.cls-5 {
-    cursor: pointer;
-    fill-opacity: 0.4;
-    transition: fill-opacity .5s ease-in-out;
-  -moz-transition: fill-opacity .5s ease-in-out;
-  -webkit-transition: fill-opacity .5s ease-in-out;
-
-    &.show {
-      stroke: black;
-      stroke-width: 3px;
-      // fill-opacity: 0.7;
-      // -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .6));
-      // filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .6));
-    }
-  }
-
-  #refundsFreezesPopup {
-    position: absolute;
-    display: none;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    background-color: white;
-    border: 1px solid black;
-    // padding: 10px;
-
-    @media @mobile {
-      right: 0;
-      margin: auto;
-    }
-
-
-    &.show {
-      display: block;
-    }
-
-    #refunds-label {
-      width: 100%;
-      padding: 10px;
-      // color: white;
-      font-family: @df-sans;
-      font-weight: bold;
-
-      &.Photoselection {
-        background-color: rgba(255,228,175, 1);
-      }
-      &.Lackofinformationunderreporting {
-        background-color: rgba(221,162,143, 1);
-      }
-      &.Inaccuracymisrepresentation {
-        background-color: rgba(251,192,173, 1);
-      }
-      &.Sourcingerrors {
-        background-color: rgba(253,221,215, 1);
-      }
-      &.Designlayout {
-        background-color: rgba(255,236,205, 1);
-      }
-      &.Racistlanguage {
-        background-color: rgba(216,221,204, 1);
-      }
-      &.Inaccuratelanguage {
-        background-color: rgba(193,207,183, 1);
-      }
-      &.Offensivelanguage {
-        background-color: rgba(165,187,148, 1);
-      }
-      &.Storyframingfocusreporterbias {
-        background-color: rgba(229,216,207, 1);
-      }
-    }
-
-    .comment {
-      font-family: @df-sans;
-      padding: 10px;
-    }
-
-    .close {
-      padding-top: 5px;
-      background-color: transparent;
-      border: none;
-      float: right;
-      font-size: 1.5em;
-      color: @df-blue;
-    }
-  }
 }
 
 .secondSvg {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  position: relative;
-  img {
-    width: 100%;
-  }
     svg {
       position: absolute;
       top: 0%;
       left: 0%;
       width: 100%;
       height: auto;
+
+      rect[class^='cls'] {
+        stroke-width: 1px !important;
+      }
   }
+}
 
-  .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8 {
-    cursor: pointer;
-    fill-opacity: 0.4;
-    transition: fill-opacity .5s ease-in-out;
-  -moz-transition: fill-opacity .5s ease-in-out;
-  -webkit-transition: fill-opacity .5s ease-in-out;
-
-    &.show {
-      stroke: black;
-      stroke-width: 1px;
-      // fill-opacity: 0.7;
-      // -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .6));
-      // filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .6));
-    }
-  }
-
-  #tearsPopup {
-    position: absolute;
-    display: none;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    background-color: white;
-    border: 1px solid black;
-    // padding: 10px;
-
-    @media @mobile {
-      right: 0;
-      margin: auto;
-    }
-
-
-    &.show {
-      display: block;
-    }
-
-    #tears-label {
+.fourthSvg {
+    svg {
+      position: absolute;
+      top: 0%;
+      left: 0%;
       width: 100%;
-      padding: 10px;
-      // color: white;
-      font-family: @df-sans;
-      font-weight: bold;
-
-      &.Photoselection {
-        background-color: rgba(255,228,175, 1);
-      }
-      &.Lackofinformationunderreporting {
-        background-color: rgba(221,162,143, 1);
-      }
-      &.Inaccuracymisrepresentation {
-        background-color: rgba(251,192,173, 1);
-      }
-      &.Sourcingerrors {
-        background-color: rgba(253,221,215, 1);
-      }
-      &.Designlayout {
-        background-color: rgba(255,236,205, 1);
-      }
-      &.Racistlanguage {
-        background-color: rgba(216,221,204, 1);
-      }
-      &.Inaccuratelanguage {
-        background-color: rgba(193,207,183, 1);
-      }
-      &.Offensivelanguage {
-        background-color: rgba(165,187,148, 1);
-      }
-      &.Storyframingfocusreporterbias {
-        background-color: rgba(229,216,207, 1);
-      }
-    }
-
-    .comment {
-      font-family: @df-sans;
-      padding: 10px;
-    }
-
-    .close {
-      padding-top: 5px;
-      background-color: transparent;
-      border: none;
-      float: right;
-      font-size: 1.5em;
-      color: @df-blue;
-    }
+      height: auto;
   }
 }
