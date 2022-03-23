@@ -24,7 +24,7 @@
       <%= t.include("partials/_ad.html", {number: 1}) %>
 
       <div class="header">
-        <img src="assets/social.jpg">
+        <img src="./assets/social.jpg">
         <h1>What we found when we examined our 1942 coverage of Executive Order 9066</h1>
         <h2>My subhead here</h2>
       </div>
@@ -55,7 +55,7 @@
 
       <div class="scroll-blocks">
         <div class="svg">
-          <img src="../assets/A1-background-img.jpg">
+          <img src="./assets/A1-background-img.jpg">
           <%= t.include("partials/A1-just-boxes.svg") %>
 
           <button>Remove redactions</button>
@@ -82,7 +82,7 @@
               <% (result[key]).forEach(element => { %>
                 <div class="example">
                   <div class="example_text"><div class="numberedCircle"><%= element.Comment %></div><%= element.caption_popup %></div>
-                  <div class="example_image"><img src="../assets/featured_jpgs/<%= element.svg %>.jpg"/></div>
+                  <div class="example_image"><img src="./assets/featured_jpgs/<%= element.svg %>.jpg"/></div>
                 </div>
               <%  }); %>
               </div>
@@ -108,8 +108,14 @@
       </p>
       </div>
 
+      <div class="buttonCon">
+        <button id="tears"></button>
+        <button id="refunds"></button>
+        <button id="a1"></button>
+      </div>
+
       <div class="secondSvg">
-        <img src="../assets/Tears2col800.png"/>
+        <img src="./assets/Tears2col800.png"/>
         <%= t.include("partials/Tears-just-boxes.svg") %>
 
         <div id="tearsPopup">
@@ -120,7 +126,7 @@
       </div>
 
       <div class="thirdSvg">
-        <img src="../assets/RefundsFreeze.png"/>
+        <img src="./assets/RefundsFreeze.png"/>
         <%= t.include("partials/RefundsFreezeJustBoxes.svg") %>
 
         <div id="refundsFreezesPopup">

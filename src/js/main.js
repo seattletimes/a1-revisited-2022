@@ -70,22 +70,26 @@ $( document ).ready(function() {
         if (element.svg === id) {
           $(this).addClass('show');
 
-          var label = element.final_category
-          var noSpaceKey = label.replace(/\s/g, '');
-          noSpaceKey = noSpaceKey.replace(/[^a-zA-Z ]/g, "");
+          var labelRefund = element.final_category
+          var noSpaceKeyRefund = labelRefund.replace(/\s/g, '');
+          noSpaceKeyRefund = noSpaceKeyRefund.replace(/[^a-zA-Z ]/g, "");
+          console.log(noSpaceKeyRefund);
 
           $('refundsFreezesPopup').removeClass();
           $('#refundsFreezesPopup #refunds-label').removeClass();
 
-          var top = $(this).attr('y');
-          var left = $(this).attr('x') > 300 ? 300 : 100;
-          left = tearsWidth > 500 ? left : 0;
-          var ratio = tearsWidth / 733.1;
+          var topRefund = $(this).attr('y');
+          var leftRefund = $(this).attr('x') > 300 ? 300 : 100;
+          leftRefund = tearsWidth > 500 ? leftRefund : 0;
+          var ratioRefund = tearsWidth / 733.1;
+          var heightRefund = $(this).attr('height');
 
-          $('#refundsFreezesPopup #refunds-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
+          var offsetTop = ((topRefund * ratioRefund * 1.07) + (parseFloat(heightRefund) * ratioRefund * 1));
+
+          $('#refundsFreezesPopup #refunds-label').addClass(`${noSpaceKeyRefund}`).empty().append(element.final_category);
           $('#refundsFreezesPopup .comment').empty().append(element.caption_popup);
-          $('#refundsFreezesPopup').css("top", `${top * ratio}px`);
-          $('#refundsFreezesPopup').css("left", `${left}px`);
+          $('#refundsFreezesPopup').css("top", `${offsetTop}px`);
+          $('#refundsFreezesPopup').css("left", `${leftRefund}px`);
           $('#refundsFreezesPopup').addClass('show');
 
         } else {}
@@ -120,15 +124,20 @@ $( document ).ready(function() {
           left = tearsWidth > 500 ? left : 0;
           var height = $(this).attr('height');
           // var top = object.top;
+
           // var left = object.x;
 
           var ratio = tearsWidth / 194.3;
+
+          var offsetTop = (top * ratio) + ((parseFloat(height) + 1) * ratio);
+
+          console.log(offsetTop);
 
           // var left = e.clientX > (tearsWidth/2) ? (tearsWidth/2) : e.clientX;
 
           $('#tearsPopup #tears-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
           $('#tearsPopup .comment').empty().append(element.caption_popup);
-          $('#tearsPopup').css("top", `${top * ratio}px`);
+          $('#tearsPopup').css("top", `${offsetTop}px`);
           $('#tearsPopup').css("left", `${left}px`);
           $('#tearsPopup').addClass('show');
 
