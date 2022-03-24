@@ -13,7 +13,7 @@ const topData = require('../../data/Top.sheet.json');
 // console.log(refundFreezeData);
 
 var windowWidth = $('.scroll-blocks').width();
-console.log(windowWidth);
+
 
 var triggerFadeIn = windowWidth > 500 ? '60%' : '120%';
 
@@ -59,9 +59,13 @@ function makeWayPoints() {
 };
 
 $( document ).ready(function() {
+
     var tearsWidth = $('.secondSvg img').width();
+    console.log(tearsWidth);
+
     makeWayPoints();
 
+    $( '.thirdSvg svg' ).ready(function() {
     $( ".thirdSvg svg #allPopups rect" ).click(function() {
       var id = $(this).attr('id');
       $( ".thirdSvg svg #allPopups rect" ).removeClass('show');
@@ -78,25 +82,29 @@ $( document ).ready(function() {
           $('refundsFreezesPopup').removeClass();
           $('#refundsFreezesPopup #refunds-label').removeClass();
 
+          var ratioRefund = tearsWidth / 733;
           var topRefund = $(this).attr('y');
-          var leftRefund = $(this).attr('x') > 300 ? 300 : 100;
+          var leftRefund = $(this).attr('x') > 300 ? ($(this).attr('x') * ratioRefund) : 20;
           leftRefund = tearsWidth > 500 ? leftRefund : 0;
-          var ratioRefund = tearsWidth / 733.1;
+
           var heightRefund = $(this).attr('height');
 
-          var offsetTop = ((topRefund * ratioRefund * 1.07) + (parseFloat(heightRefund) * ratioRefund * 1));
+          console.log(leftRefund);
+
+          var offsetTop_Refund = ((topRefund * ratioRefund) + ((parseFloat(heightRefund) + 25) * ratioRefund));
 
           $('#refundsFreezesPopup #refunds-label').addClass(`${noSpaceKeyRefund}`).empty().append(element.final_category);
           $('#refundsFreezesPopup .comment').empty().append(element.caption_popup);
-          $('#refundsFreezesPopup').css("top", `${offsetTop}px`);
+          $('#refundsFreezesPopup').css("top", `${offsetTop_Refund}px`);
           $('#refundsFreezesPopup').css("left", `${leftRefund}px`);
           $('#refundsFreezesPopup').addClass('show');
 
         } else {}
       });
     });
+  });
 
-
+$( '.secondSvg img' ).ready(function() {
     $( ".secondSvg svg rect" ).click(function(e) {
       var id = $(this).attr('id');
       $( ".secondSvg svg rect" ).removeClass('show');
@@ -113,7 +121,6 @@ $( document ).ready(function() {
 
           var gCon = $(this).closest( "g" );
           var object = gCon[0].getBoundingClientRect();
-          console.log(object);
 
           var chosenRect = this.getBoundingClientRect();
 
@@ -129,8 +136,6 @@ $( document ).ready(function() {
 
           var offsetTop = (top * ratio) + ((parseFloat(height) + 1) * ratio);
 
-          console.log(offsetTop);
-
           // var left = e.clientX > (tearsWidth/2) ? (tearsWidth/2) : e.clientX;
 
           $('#tearsPopup #tears-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
@@ -142,7 +147,9 @@ $( document ).ready(function() {
         } else {}
       });
     });
+});
 
+$( '.fourthSvg img' ).ready(function() {
       $( ".fourthSvg svg rect" ).click(function(e) {
         var id = $(this).attr('id');
         $( ".fourthSvg svg rect" ).removeClass('show');
@@ -162,14 +169,9 @@ $( document ).ready(function() {
             var left_top = $(this).attr('x') > 90 ? 300 : 100;
             left_top = tearsWidth > 500 ? left_top : 0;
             var height_top = $(this).attr('height');
-            console.log(height_top);
-            // var top = object.top;
+            var top_ratio = tearsWidth / 754.90002;
 
-            // var left = object.x;
-
-            var top_ratio = tearsWidth / 650;
-
-            var offsetTop_Top = (top_top * top_ratio);
+            var offsetTop_Top = (top_top * top_ratio) + (parseFloat(height_top) * top_ratio);
 
             $('#topPopup #top-label').addClass(`${noSpaceKey}`).empty().append(element.final_category);
             $('#topPopup .comment').empty().append(element.caption_popup);
@@ -181,6 +183,9 @@ $( document ).ready(function() {
         });
       });
 
+var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + 400;
+$('#allStories').height(firstCall);
+});
 
 
 
@@ -205,10 +210,7 @@ $( document ).ready(function() {
       $( this ).addClass('show');
       var findID = $( this).data('id');
       $( '#allStories' ).find(`.story[data-id='${findID}']`).addClass('show');
-      var setHeight = $( '#allStories' ).find(`.story[data-id='${findID}']`).height();
+      var setHeight = (findID === "top") ? $( '#allStories' ).find(`.story[data-id='${findID}']`).height() + 400 : $( '#allStories' ).find(`.story[data-id='${findID}']`).height();
       $('#allStories').height(setHeight);
-
-
-
     });
 });
