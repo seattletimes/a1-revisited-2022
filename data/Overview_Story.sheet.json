@@ -8,13 +8,13 @@
   {
     "Comment": 2,
     "svg": "LI-2",
-    "final_category": "Lack of information/under reporting",
+    "final_category": "Lack of information/underreporting",
     "caption_popup": "Today we would ask the reporter to find data to back this up and examine if there are other potential causes for the lack of requests."
   },
   {
     "Comment": 3,
     "svg": "LI-8",
-    "final_category": "Lack of information/under reporting",
+    "final_category": "Lack of information/underreporting",
     "caption_popup": "Accounts from those incarcerated indicate that these descriptions of events are inaccurate and fail to mention the large financial losses to those whose belongings were sold at bargain prices, stolen, or destroyed and the fact that Japanese Americans were reclassified as 4C (enemy aliens) and barred from military service. The Seattle Times collaborated with Densho to provide historical context for this annotation."
   },
   {
@@ -86,13 +86,13 @@
   {
     "Comment": 15,
     "svg": "SF-1",
-    "final_category": "Story framing/focus (reporter bias)",
+    "final_category": "Story framing/focus (bias)",
     "caption_popup": "\"Credit to the efficiency of the army\" is commentary from the reporter that may indicate the reporter's bias and/or susceptibility to propaganda. We would cut this line and ask the reporter to show how the days' events transpired by letting the sources speak for themselves and describing their actions."
   },
   {
     "Comment": 16,
     "svg": "SF-2",
-    "final_category": "Story framing/focus (reporter bias)",
+    "final_category": "Story framing/focus (bias)",
     "caption_popup": "Phrases like “marred an orderly evacuation” and “only one incident” incorrectly center orderliness as the important aspect of this anecdote. They also belittle and dehumanize the woman who had a heart attack, and imply that the forced removal was “right.” We would cut these phrases and ask the reporter to find out who the woman was, talk to her family and learn more about her condition and treatment."
   }
 ]
