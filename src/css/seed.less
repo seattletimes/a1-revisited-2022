@@ -141,6 +141,8 @@ h1 {
 }
 
 .scroll-blocks {
+  max-width: 1000px;
+  margin: auto;
   .block {
     margin: 50vh auto;
     margin-left: ~"calc((100vh * .68) + 20px)";
@@ -256,6 +258,7 @@ h1 {
       .example_image {
         max-width: 500px;
         margin: auto;
+        padding: 0 10px;
 
         @media @mobile {
           padding: 0 20px;
@@ -471,4 +474,16 @@ h1 {
 .iframes {
   max-width: 400px;
   padding: 20px;
+}
+
+.directions {
+  color: @df-middle-gray;
+  font-family: @df-sans;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.section {
+  max-width: 720px;
+  margin: auto;
 }
