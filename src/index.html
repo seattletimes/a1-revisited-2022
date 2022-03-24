@@ -123,7 +123,11 @@
               <% (result[key]).forEach(element => { %>
                 <div class="example">
                   <div class="example_text"><div class="numberedCircle"><%= element.Comment %></div><%= element.caption_popup %></div>
-                  <div class="example_image"><img src="./assets/featured_jpgs/<%= element.svg %>.jpg"/></div>
+                  <div class="example_image show"><img src="./assets/featured_jpgs/<%= element.svg %>.jpg"/></div>
+                  <% if (element.redact) { %>
+                    <div class="example_image"><img src="./assets/featured_jpgs/<%= element.svg %>_unredacted.jpg"/></div>
+                    <button class="redact"><span class="show toggle">Show</span><span class="toggle">Hide</span> original language</button>
+                  <% } %>
                 </div>
               <%  }); %>
               </div>
@@ -235,13 +239,13 @@
             <br>
             <strong>Contributing editors:</strong>  Melissa Davis, Lynn Jacobson, Frank Mina and Danny Gawlowski
             </div>
-    
+
             <div class="column">
               <strong>Developer:</strong>  Lauren Flannery
               <br>
               <strong>Project coordinator:</strong>  Laura Gordon
               <br>
-              <strong>Engagement editor:</strong>  Ryan Nguyen              
+              <strong>Engagement editor:</strong>  Ryan Nguyen
             </div>
           </div>
       </div>

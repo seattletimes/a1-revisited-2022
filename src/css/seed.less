@@ -258,6 +258,11 @@ h1 {
         max-width: 500px;
         margin: auto;
         padding: 0 10px;
+        display: none;
+
+        &.show {
+          display: block;
+        }
 
         @media @mobile {
           padding: 0 20px;
@@ -272,7 +277,7 @@ h1 {
 
         @media @mobile {
           font-size: 16px;
-          
+
         }
 
         .numberedCircle {
@@ -297,6 +302,25 @@ h1 {
     .example:nth-child(4n) {
       margin-top: 2em;
     }
+
+    .redact {
+        padding: 2px 5px;
+        background: #0777b3;
+        border-radius: 3px;
+        color: white;
+        display: block;
+        margin: auto;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 3px;
+        padding: 5px;
+
+      .toggle {
+        display: none;
+        &.show { display: inline-block; }
+      }
+    }
+    .redact:hover { background-color: #104968; }
 
   }
 
@@ -459,11 +483,15 @@ h1 {
 
 .flex-group {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin: auto;
 }
 
-.flex {
-  padding: 30px;
+.flex-3 {
+  ul { padding: 0px; }
+  width: 33%;
+  // padding: 30px;
 }
 
 .directions {

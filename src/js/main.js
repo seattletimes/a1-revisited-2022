@@ -77,7 +77,6 @@ $( document ).ready(function() {
           var labelRefund = element.final_category
           var noSpaceKeyRefund = labelRefund.replace(/\s/g, '');
           noSpaceKeyRefund = noSpaceKeyRefund.replace(/[^a-zA-Z ]/g, "");
-          console.log(noSpaceKeyRefund);
 
           $('refundsFreezesPopup').removeClass();
           $('#refundsFreezesPopup #refunds-label').removeClass();
@@ -88,8 +87,6 @@ $( document ).ready(function() {
           leftRefund = tearsWidth > 500 ? leftRefund : 0;
 
           var heightRefund = $(this).attr('height');
-
-          console.log(leftRefund);
 
           var offsetTop_Refund = ((topRefund * ratioRefund) + ((parseFloat(heightRefund) + 25) * ratioRefund));
 
@@ -203,6 +200,13 @@ $('#allStories').height(firstCall);
       $('#topPopup').removeClass('show');
       $( ".fourthSvg svg rect" ).removeClass('show');
     });
+
+    $( "button.redact" ).click(function() {
+      $( "button.redact span" ).toggleClass( "show" );
+
+      $(this).closest( ".example" ).find('.example_image').toggleClass('show');
+    });
+
 
     $( ".buttonCon button" ).click(function() {
       $( ".buttonCon button" ).removeClass('show');

@@ -1,96 +1,112 @@
 [
   {
     "Comment": 1,
+    "redact": "",
     "svg": "PS-2",
     "final_category": "Photo selection",
     "caption_popup": "We would not use these photos today because they appear staged and misleading. We emphasize true, documentary moments. When we ask people to pose for portraits, we ensure that the image is clearly a portrait and work with the person on how they are depicted, including whether they want to smile. These images fail to meet those standards. If we would have used a photo of soldiers, we would have reduced the size in order to place more emphasis on the people who are most impacted. "
   },
   {
     "Comment": 2,
+    "redact": "",
     "svg": "LI-2",
     "final_category": "Lack of information/underreporting",
     "caption_popup": "Today we would ask the reporter to find data to back this up and examine if there are other potential causes for the lack of requests."
   },
   {
     "Comment": 3,
+    "redact": "",
     "svg": "LI-8",
     "final_category": "Lack of information/underreporting",
     "caption_popup": "Accounts from those incarcerated indicate that these descriptions of events are inaccurate and fail to mention the large financial losses to those whose belongings were sold at bargain prices, stolen, or destroyed and the fact that Japanese Americans were reclassified as 4C (enemy aliens) and barred from military service. The Seattle Times collaborated with Densho to provide historical context for this annotation."
   },
   {
     "Comment": 4,
+    "redact": "",
     "svg": "IM-5",
     "final_category": "Inaccuracy/misrepresentation",
     "caption_popup": "This quote is hateful and inaccurate and we would either cut it or follow it immediately with a sentence or two explaining that this person's assessment is incorrect. U.S. citizens are not beholden to the Japanese government, and Japanese American business owners were being \"put out of business\" because of the executive order. We would also include quotes and perspectives from business owners who were stripped of their livelihoods and being denied refunds on licenses. This article would be expanded to include all of these important aspects."
   },
   {
     "Comment": 5,
+    "redact": "",
     "svg": "SE-1",
     "final_category": "Sourcing errors",
     "caption_popup": "Today we would seek and focus on quotes from those who were the most impacted ­— the residents who were being forcibly removed."
   },
   {
     "Comment": 6,
+    "redact": "",
     "svg": "SE-2",
     "final_category": "Sourcing errors",
     "caption_popup": "Of the three Japanese American residents quoted in this story all of them (except the little girl who can't bring her kitten) are quoted as being eager to help the war effort by leaving or accepting the situation. We would recognize this today as an unbalanced perspective and one which may be influenced by fear of retaliation or of appearing to be against the U.S. government at a time of high anti-Japanese sentiment. Given this difficulty, we would offer anonymity to those sources, seek out sources with different perspectives and consider ways to protect sources willing to share perspectives that could endanger them. We would also plan follow-up stories that investigated the conditions at the incarceration camps."
   },
   {
     "Comment": 7,
+    "redact": "y",
     "svg": "PS-1",
     "final_category": "Design/layout",
     "caption_popup": "We would not make this photo the lead image of the day. It is not related to the biggest news headline. It was three months old at the time of publication and it didn’t need to be on Page One; its accompanying story is far inside the paper. Instead, we would move up the story about Bainbridge Island residents being forced to leave their homes, and use two or three photos from Bainbridge, the ferry and the train as residents were being taken away."
   },
   {
     "Comment": 8,
+    "redact": "y",
     "svg": "RL-1",
     "final_category": "Racist language",
     "caption_popup": "We do not use the racist slur for Japanese Americans that is in the headline. We would not reduce local news of the U.S. government forcing its own citizens from their homes to a bottom corner of the front page. We would not use such innocuous language in the headline: These Bainbridge Island residents are not “bidding it farewell,” they are being taken away and forced to leave everything they own behind. “Smiles” reads like propaganda. Today, we would write a headline at the top of the page making it clear that Japanese American residents of Bainbridge were being forced to leave their homes due to a federal policy."
   },
   {
     "Comment": 9,
+    "redact": "",
     "svg": "RL-2",
     "final_category": "Racist language",
     "caption_popup": "The use of the term “Japanese” throughout this story is not accurate and emphasizes “foreignness.” We would also avoid the term “alien,” which is offensive and inaccurate. We would accurately describe them as Japanese Americans and Bainbridge Island residents."
   },
   {
     "Comment": 10,
+    "redact": "y",
     "svg": "IL-1",
     "final_category": "Inaccurate language",
     "caption_popup": "This language downplays the forced nature and extraorindary situation of the exclusion order. Today, we would use language that makes it clear that Japanese American Bainbridge residents were being forced to leave their homes due to a racist federal policy."
   },
   {
     "Comment": 11,
+    "redact": "",
     "svg": "IL-2",
     "final_category": "Inaccurate language",
     "caption_popup": "The use of the term “Japanese” throughout this story is not accurate and emphasizes “foreignness.” We would also avoid the term “alien,” which is offensive and inaccurate. We would accurately describe them as Japanese Americans and Bainbridge Island residents."
   },
   {
     "Comment": 12,
+    "redact": "",
     "svg": "IL-4",
     "final_category": "Inaccurate language",
     "caption_popup": "This language misrepresents the reality of the situation. We would accurately represent the soldiers’ role as armed guards there to enact the executive order forcing of U.S. residents and citizens from their homes."
   },
   {
     "Comment": 13,
+    "redact": "",
     "svg": "OL-1",
     "final_category": "Offensive language",
     "caption_popup": "We would not use the term \"alien\" which is offensive and inaccurate."
   },
   {
     "Comment": 14,
+    "redact": "",
     "svg": "OL-2",
     "final_category": "Offensive language",
     "caption_popup": "We would not refer to people's personal belongings as \"strange,\" because it marginalizes U.S. residents of Japanese heritage by implying that they and their property do not belong."
   },
   {
     "Comment": 15,
+    "redact": "",
     "svg": "SF-1",
     "final_category": "Story framing/focus (bias)",
     "caption_popup": "\"Credit to the efficiency of the army\" is commentary from the reporter that may indicate the reporter's bias and/or susceptibility to propaganda. We would cut this line and ask the reporter to show how the days' events transpired by letting the sources speak for themselves and describing their actions."
   },
   {
     "Comment": 16,
+    "redact": "",
     "svg": "SF-2",
     "final_category": "Story framing/focus (bias)",
     "caption_popup": "Phrases like “marred an orderly evacuation” and “only one incident” incorrectly center orderliness as the important aspect of this anecdote. They also belittle and dehumanize the woman who had a heart attack, and imply that the forced removal was “right.” We would cut these phrases and ask the reporter to find out who the woman was, talk to her family and learn more about her condition and treatment."
