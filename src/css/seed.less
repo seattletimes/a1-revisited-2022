@@ -43,7 +43,6 @@ h1 {
   }
 }
 
-
 .header {
   max-width: 1000px;
   margin: auto;
@@ -458,10 +457,6 @@ h1 {
 
 //sectioning
 
-.change-table {
-  display: flex;
-}
-
 .flex-group {
   display: flex;
   margin: auto;
@@ -471,19 +466,76 @@ h1 {
   padding: 30px;
 }
 
-.iframes {
-  max-width: 400px;
-  padding: 20px;
-}
-
 .directions {
   color: @df-middle-gray;
   font-family: @df-sans;
   font-size: 17px;
   font-style: italic;
+  text-align: center;
+  padding-bottom: 20px
 }
 
 .section {
   max-width: 720px;
   margin: auto;
 }
+
+//category key
+.change-table {
+  display: flex;
+}
+
+.flex-3 {
+
+}
+
+.ul.table {
+  list-style-type: none;
+}
+
+.li {
+  display: inline-block;
+  line-height: 14px;
+  margin-bottom: 2px;
+  padding-right: 5px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.key {
+  width: 20%;
+  height: 12px;
+  vertical-align: text-top;
+  display: inline-block;
+}
+
+
+//credits
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 110px;
+  padding-bottom: 20px;
+
+  @media @tablet {
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+
+.column {
+  flex: 1;
+  max-width: 50%;
+
+  @media @mobile {
+    flex-basis: 100%;
+  }
+}
+.constrained {
+  margin: auto;
+  max-width: 900px;
+  padding: 0 16px;
+  margin-block-end: 60px;
+  }
