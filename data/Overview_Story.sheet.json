@@ -27,7 +27,7 @@
     "Comment": 5,
     "svg": "SE-1",
     "final_category": "Sourcing errors",
-    "caption_popup": "Today we would center and seek quotes from those who were the most impacted -- the residents who were being forcibly removed."
+    "caption_popup": "Today we would seek and focus on quotes from those who were the most impacted ­— the residents who were being forcibly removed."
   },
   {
     "Comment": 6,
@@ -39,25 +39,19 @@
     "Comment": 7,
     "svg": "PS-1",
     "final_category": "Design/layout",
-    "caption_popup": "We would not use this photo, which was 3 months old at time of publication and headlined with a racist slur. It is unrelated to the story and provides no useful context. Instead, we would move up the story about Bainbridge residents being forced to leave their homes and use two or three photos from Bainbridge Island, the ferry and the train as residents were being forced to leave."
-  },
-  {
-    "Comment": 17,
-    "svg": "PS-1",
-    "final_category": "Design/layout",
-    "caption_popup": "This large headline is too big for the subject matter and isn't needed."
+    "caption_popup": "We would not make this photo the lead image of the day. It is not related to the biggest news headline. It was three months old at the time of publication and it didn’t need to be on Page One; its accompanying story is far inside the paper. Instead, we would move up the story about Bainbridge Island residents being forced to leave their homes, and use two or three photos from Bainbridge, the ferry and the train as residents were being taken away."
   },
   {
     "Comment": 8,
     "svg": "RL-1",
     "final_category": "Racist language",
-    "caption_popup": "We do not use the racist slur for Japanese Americans that is in the headline. We would not reduce local news of the U.S. government forcing its own citizens from their homes to a bottom corner of the front page. We would not use such innocuous language in the headline: These Bainbridge Island residents are not \"bidding it farewell,\" they are being taken away and forced to leave everything they own behind. \"Smiles\" reads like propaganda. Today, we would write a headline at the top of the page making it clear that Japanese American residents of  Bainbridge were being forced to leave their homes due to a federal policy."
+    "caption_popup": "We do not use the racist slur for Japanese Americans that is in the headline. We would not reduce local news of the U.S. government forcing its own citizens from their homes to a bottom corner of the front page. We would not use such innocuous language in the headline: These Bainbridge Island residents are not “bidding it farewell,” they are being taken away and forced to leave everything they own behind. “Smiles” reads like propaganda. Today, we would write a headline at the top of the page making it clear that Japanese American residents of Bainbridge were being forced to leave their homes due to a federal policy."
   },
   {
     "Comment": 9,
     "svg": "RL-2",
     "final_category": "Racist language",
-    "caption_popup": "We would not use a racist stereotype to describe people."
+    "caption_popup": "The use of the term “Japanese” throughout this story is not accurate and emphasizes “foreignness.” We would also avoid the term “alien,” which is offensive and inaccurate. We would accurately describe them as Japanese Americans and Bainbridge Island residents."
   },
   {
     "Comment": 10,
@@ -69,13 +63,13 @@
     "Comment": 11,
     "svg": "IL-2",
     "final_category": "Inaccurate language",
-    "caption_popup": "The use of the term \"Japanese\" throughout this story is not accurate and emphasizes \"foreignness.\" We would also avoid the term \"alien,\" which is offensive and inaccurate. We would accurately describe them as Japanese Americans and Bainbridge Island residents."
+    "caption_popup": "The use of the term “Japanese” throughout this story is not accurate and emphasizes “foreignness.” We would also avoid the term “alien,” which is offensive and inaccurate. We would accurately describe them as Japanese Americans and Bainbridge Island residents."
   },
   {
     "Comment": 12,
     "svg": "IL-4",
     "final_category": "Inaccurate language",
-    "caption_popup": "This language misrepresents the reality of the situation. We would accurately represent the soldiers' role as armed guards there to enact the executive order forcing of U.S. residents and citizens from their homes."
+    "caption_popup": "This language misrepresents the reality of the situation. We would accurately represent the soldiers’ role as armed guards there to enact the executive order forcing of U.S. residents and citizens from their homes."
   },
   {
     "Comment": 13,
@@ -99,6 +93,6 @@
     "Comment": 16,
     "svg": "SF-2",
     "final_category": "Story framing/focus (reporter bias)",
-    "caption_popup": "Phrases like \"marred an orderly evacuation\" and \"only one incident\" falsely center orderliness as the important aspect of this anecdote. They also belittle and dehumanize the woman who had a heart attack, and imply that the forced removal was \"right.\" We would cut these phrases and ask the reporter to find out who the woman was, talk to her family and learn more about her condition and treatment."
+    "caption_popup": "Phrases like “marred an orderly evacuation” and “only one incident” incorrectly center orderliness as the important aspect of this anecdote. They also belittle and dehumanize the woman who had a heart attack, and imply that the forced removal was “right.” We would cut these phrases and ask the reporter to find out who the woman was, talk to her family and learn more about her condition and treatment."
   }
 ]
