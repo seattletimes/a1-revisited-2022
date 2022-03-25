@@ -13,7 +13,7 @@ const topData = require('../../data/Top.sheet.json');
 // console.log(refundFreezeData);
 
 var windowWidth = $('.scroll-blocks').width();
-var extra = (windowWidth > 600) ? 250 : 700;
+var extra = (windowWidth > 600) ? 250 : 550;
 var triggerFadeIn = windowWidth > 500 ? '60%' : '120%';
 
 function makeWayPoints() {

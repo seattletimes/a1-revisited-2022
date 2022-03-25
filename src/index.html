@@ -109,6 +109,10 @@
                 <div class="key Offensivelanguage"></div>
                   <p>Offensive language</p>
               </li>
+              <li>
+                <div class="key redacted"></div>
+                  <p>Redacted slur</p>
+              </li>
             </ul>
           </div>
 
@@ -119,8 +123,6 @@
         <div class="svg">
           <img src="./assets/A1-background-img.jpg" alt="annotated image of the original pages with numbered comments">
           <%= t.include("partials/A1-just-boxes.svg") %>
-
-          <button>View original (includes graphic language) </button>
         </div>
 
         <% var allComments = json.Overview_Story;
@@ -195,7 +197,7 @@
 
         <div class="directions">Select the highlighted part in each story to view our annotations.</div>
 
-        <div class="flex-group">
+        <div class="flex-group carousel">
           <div class="flex">
             <button id="a1-top" class="show" data-id="top">Top of A1 page</button>
           </div>
@@ -247,6 +249,8 @@
       </div>
 
       <%= t.include("partials/_ad.html", {number: 2}) %>
+
+      <%= t.include("partials/_dontMiss.html") %>
 
 
       <div class="module">
