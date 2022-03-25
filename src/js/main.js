@@ -60,8 +60,6 @@ function makeWayPoints() {
 $( document ).ready(function() {
 
     var tearsWidth = $('.secondSvg img').width();
-    console.log(tearsWidth);
-
     makeWayPoints();
 
     $( '.thirdSvg svg' ).ready(function() {
@@ -124,10 +122,6 @@ $( '.secondSvg img' ).ready(function() {
           var left = $(this).attr('x') > 90 ? 300 : 100;
           left = tearsWidth > 500 ? left : 0;
           var height = $(this).attr('height');
-          // var top = object.top;
-
-          // var left = object.x;
-
           var ratio = tearsWidth / 194.3;
 
           var offsetTop = (top * ratio) + ((parseFloat(height) + 1) * ratio);
