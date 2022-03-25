@@ -49,7 +49,6 @@ h1 {
 
   button {
     background: #0777b3;
-    border-radius: 5px;
     color: white;
     display: block;
     font-size: 19px;
@@ -204,7 +203,7 @@ h1 {
     }
 
     @media @tablet {
-      width: 95%;
+      width: 90%;
       margin: 130vh auto;
 
       &.Photoselection {
@@ -247,6 +246,7 @@ h1 {
 
       @media @tablet {
         border-bottom: 1px solid @df-dark-gray;
+        font-size: 19px;
       }
 
       &.Photoselection {
@@ -303,7 +303,7 @@ h1 {
         margin-top: 5px;
 
         @media @mobile {
-          font-size: 16px;
+          font-size: 15px;
 
         }
 
@@ -333,7 +333,6 @@ h1 {
     .redact {
         padding: 10px 5px;
         background: #104968;
-        border-radius: 5px;
         color: white;
         display: block;
         font-size: 14px;
@@ -348,7 +347,6 @@ h1 {
       }
     }
     .redact:hover { background-color: black; }
-
   }
 
   .block:last-child {
@@ -506,7 +504,12 @@ h1 {
   }
 }
 
-//sectioning
+//category key
+.change-table {
+  // display: flex;
+  font-size: 0px;
+  padding: 20px 0 0;
+}
 
 .flex-3 {
   width: 33%;
@@ -606,14 +609,6 @@ h1 {
   padding: 10px;
 }
 
-//category key
-.change-table {
-  // display: flex;
-  font-size: 0px;
-  padding: 20px 0 0;
-}
-
-
 //credits
 .split {
   display: flex;
@@ -634,104 +629,146 @@ h1 {
 
   @media @mobile {
     flex-basis: 100%;
+    max-width: 100%;
   }
 }
+
 .constrained {
   margin: auto;
   max-width: 900px;
   padding: 0 16px;
   margin-block-end: 60px;
-  }
+}
 
+//nav buttoms
 
-  .navButton {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    padding: 5px;
+.nav-section {
+  background-color: #e0e0e0;
+  max-width: 85%;
+  margin: 40px auto;
+  padding: 20px; 
+}
 
-    @media @mobile {
-      display: inline-block;
-      text-align: center;
-    }
-    
-  }
-  
-  .button-nav {
-    text-align: center;
-    width: 15em;
-    flex-grow: 1 1 auto;
-    // border: 1px solid #0777b3;
-    padding: 6px 6px;
-    border-radius: 5px;
-    font-family: @df-sans;
-    font-size: 17px;
-    background-color: #a1cae0;
-    color: black !important;
-    font-weight: 600;
+.navButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+
+  @media @mobile {
     display: inline-block;
-    margin-top: 8px;
-
-    @media @mobile {
-      display: inline-block;
-      text-align: center;
-    }
-  }
-  
-  .button-nav:hover {
-    cursor: pointer;
-    background-color: #0777b3;
-    color: white !important;
-  }
-
-  .redaction-example {
-    max-width: 500px;
-    margin: auto;
-    border: 1px solid @df-border-gray;
-    padding: 15px 15px 0;
-  }
-
-  .redaction-key {
-    img {
-      max-width: 40px;
-      padding-right: 10px;
-    }
-    margin: auto;
     text-align: center;
-    // line-height: 1.6em;
-    font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
-    font-size: 17px;
-    vertical-align: middle;
-    padding-block-end: 20px;
+  }
+}
+  
+.button-nav {
+  text-align: center;
+  width: 15em;
+  flex-grow: 1 1 auto;
+  border: 1px solid #0777b3;
+  padding: 6px 6px;
+  font-family: @df-sans;
+  font-size: 17px;
+  background-color: white;
+  color: black !important;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 8px;
+
+  @media @tablet {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.button-nav:hover {
+  cursor: pointer;
+  background-color: #0777b3;
+  color: white !important;
+}
+
+.redaction-example {
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid @df-border-gray;
+  padding: 15px 15px 0;
+}
+
+.redaction-key {
+  img {
+    max-width: 40px;
+    padding-right: 10px;
   }
 
+  margin: auto;
+  text-align: center;
+  // line-height: 1.6em;
+  font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+  font-size: 17px;
+  vertical-align: middle;
+  padding-block-end: 20px;
+}
+
+//download section
+.download-section {
+  background-color: @df-light-gray;
+  max-width: 85%;
+  margin: 40px auto;
+  padding: 20px;
+
+  @media @mobile {
+    max-width: 100%;
+  }
+}
   .download-group {
-    max-width: 250px;
+    width: 250px;
     margin: auto;
-    border: 1px solid @df-border-gray;
+    // border: 1px solid @df-border-gray;
     padding: 15px 15px 0;
+    background-color: white;
+    text-decoration: underline;
+    height: 100%;
 
     @media @mobile {
-      max-width: 100%;
       padding-bottom: 20px;
       margin-bottom: 20px;
+      max-width: 190px;
+      height: 90%;
     }
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
   }
 
   .flex-parent {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 310px;
-    padding-bottom: 20px;
+    height: 340px;
+    padding: 20px 0;
+    text-align: center;
+
+    @media @mobile {
+      height: 380px;
+    }
   }
 
   .flex2 {
     flex: 1;
     max-width: 50%;
+    margin: 0 20px;
   
     @media @mobile {
       flex-basis: 100%;
+      max-width: 100%;
+      margin: 5px;
     }
   }
+
+  
