@@ -279,6 +279,8 @@ h1 {
     }
 
     .example {
+      padding-block-end: 10px;
+
       .example_image {
         max-width: 500px;
         margin: auto;
@@ -329,16 +331,15 @@ h1 {
     }
 
     .redact {
-        padding: 2px 5px;
-        background: #0777b3;
-        border-radius: 3px;
+        padding: 10px 5px;
+        background: #104968;
+        border-radius: 5px;
         color: white;
         display: block;
-        margin: auto;
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 3px;
-        padding: 5px;
+        font-size: 14px;
+        // font-weight: bold;
+        margin: 3px auto;
+        padding: 4px 6px;
         border: none;
 
       .toggle {
@@ -346,7 +347,7 @@ h1 {
         &.show { display: inline-block; }
       }
     }
-    .redact:hover { background-color: #104968; }
+    .redact:hover { background-color: black; }
 
   }
 
@@ -511,10 +512,12 @@ h1 {
   width: 33%;
   display: inline-block;
   vertical-align: top;
-  padding-right: 5px;
+  padding-right: 10px;
 
   h3 { 
-    margin: 3px 0px; font-size: 20px; 
+    margin: 10px 0px;
+    font-size: 19px;
+    min-height: 20px;
   }
   ul { 
     padding: 0px; 
@@ -566,9 +569,11 @@ h1 {
 
     p {
       display: inline;
-      font-size: 18px;
+      font-size: 16px;
       vertical-align: middle;
-      line-height: 1.1em;
+      line-height: 1.6em;
+      font-family: @df-sans;
+      padding-left: 10px;
     }
 
     &:last-child {
@@ -605,13 +610,8 @@ h1 {
 .change-table {
   // display: flex;
   font-size: 0px;
-  margin-top: 10px;
-  // padding: 10px;
-
+  padding: 20px 0;
 }
-
-
-
 
 
 //credits
