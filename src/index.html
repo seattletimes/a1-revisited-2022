@@ -35,13 +35,13 @@
 
       <p>In February 1942, a few short months after the attack at Pearl Harbor, President Franklin D. Roosevelt signed Executive Order 9066 designating Japanese Americans as “threats” to national security. They were evicted from their homes on the West Coast and sent to incarceration camps.</p>
 
-      <p>On March 30, 1942, Bainbridge Island became the first community where the order was fully enforced. The Seattle Times (then known as The Seattle Daily Times) covered the events of that day in 1942 in three stories on A1 (the front page) and A2 of our March 30 issue.</p>
+      <p>On March 30, 1942, Bainbridge Island became the first community where the order was fully enforced. The Seattle Times (then known as The Seattle Daily Times) covered the events of that day in 1942 in one story on A1 (the front page) and two brief stories on A2 of our March 30 issue.</p>
 
-      <p>Eighty years later, in an effort to take accountability for and learn from the harm caused by our coverage that day, The Times has revisited the stories, photos and headlines that told the story of that historic event.</p>
+      <p>Eighty years later, in an effort to take accountability for and learn from the harm caused by our coverage that day, <a href="https://www.seattletimes.com/?p=14571308" target="_blank" rel="nofollow noreferrer noopener">The Times has revisited the stories, photos and headlines that told the story of that historic event.</a></p>
 
       <p>We formed a team of journalists, editors, designers, news researchers and photo editors, and collaborated with local non-profit organization <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>, to scrutinize every word, caption, photo and design decision made in telling those stories.</p>
 
-      <p>In our examination, we found that our 1942 coverage used racist slurs and stereotypes, inaccurate and offensive language, one-sided sourcing and perspective, and photos and layouts that downplayed the significance of the events of that day. We compiled these observations into notes on the 1942 pages, highlighting where each issue appears, then we categorized the issues identified and added these as tags in the annotations.</p>
+      <p>In our examination, we found that our 1942 coverage used racist slurs and stereotypes, inaccurate and offensive language, one-sided sourcing and perspective, and photos and layouts that downplayed the significance of the events of that day. We compiled these observations into notes on the 1942 pages, categorizing and highlighting them.</p>
 
       <p>In an effort to avoid further harm, we chose to remove the racist language from view in this presentation. In the interest of historical accuracy, we offer the option of viewing the <a href="#download-original">original, unaltered pages</a> below.</p>
 
@@ -49,7 +49,7 @@
       <p class="caption">We redacted racist slurs by covering them with a black box (see an example above). You can opt-in to see the original text by clicking on the button below these images.</p>
       </div>
 
-      <p>We regret the <a href="http://seattletimes.com/a1-revisited-confronting-the-racism-on-our-own-front-pages" target="_blank">enduring legacy of the practices documented in these pages</a>, and we also acknowledge that racism is not a thing of the past. While The Seattle Times aspires to provide accurate, sensitive and inclusive coverage for all of our communities, we have work to do. This project has provided valuable insights that we hope will continue to inform and strengthen our journalism.</p>
+      <p><a href="https://www.seattletimes.com/?p=14774055" target="_blank" rel="nofollow noreferrer noopener">We regret the  enduring legacy of the practices documented in these pages</a>, and we also acknowledge that racism is not a thing of the past. While The Seattle Times aspires to provide accurate, sensitive and inclusive coverage for all of our communities, we have work to do. This project has provided valuable insights that we hope will continue to inform and strengthen our journalism.</p>
 
       <p>— Crystal Paul, project editor</p>
       </div>
@@ -161,12 +161,12 @@
               <div class="category <%= NoSpaceKey %>"><%= key %></div>
               <% (result[key]).forEach(element => { %>
                 <div class="example">
-                  <div class="example_text"><div class="numberedCircle"><%= element.Comment %></div><%= element.caption_popup %></div>
                   <div class="example_image show"><img src="./assets/featured_jpgs/<%= element.svg %>.jpg" alt="<%= element.alt_text %>"/></div>
                   <% if (element.redact) { %>
                     <div class="example_image"><img src="./assets/featured_jpgs/<%= element.svg %>_unredacted.jpg" alt="<%= element.alt_text %>"/></div>
                     <button class="redact"><span class="show toggle">Show</span><span class="toggle">Hide</span> original language</button>
                   <% } %>
+                  <div class="example_text"><div class="numberedCircle"><%= element.Comment %></div><%= element.caption_popup %></div>
                 </div>
               <%  }); %>
               </div>
