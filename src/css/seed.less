@@ -594,7 +594,7 @@ h1 {
 .directions {
   color: @df-middle-gray;
   font-family: @df-sans;
-  font-size: 17px;
+  font-size: 19px;
   font-style: italic;
   text-align: center;
   padding-bottom: 20px
@@ -610,7 +610,7 @@ h1 {
 .change-table {
   // display: flex;
   font-size: 0px;
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 
 
@@ -690,4 +690,48 @@ h1 {
     margin: auto;
     border: 1px solid @df-border-gray;
     padding: 15px 15px 0;
+  }
+
+  .redaction-key {
+    img {
+      max-width: 40px;
+      padding-right: 10px;
+    }
+    margin: auto;
+    text-align: center;
+    // line-height: 1.6em;
+    font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+    font-size: 17px;
+    vertical-align: middle;
+    padding-block-end: 20px;
+  }
+
+  .download-group {
+    max-width: 250px;
+    margin: auto;
+    border: 1px solid @df-border-gray;
+    padding: 15px 15px 0;
+
+    @media @mobile {
+      max-width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 310px;
+    padding-bottom: 20px;
+  }
+
+  .flex2 {
+    flex: 1;
+    max-width: 50%;
+  
+    @media @mobile {
+      flex-basis: 100%;
+    }
   }
