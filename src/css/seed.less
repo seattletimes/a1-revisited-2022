@@ -642,3 +642,52 @@ h1 {
   padding: 0 16px;
   margin-block-end: 60px;
   }
+
+
+  .navButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+
+    @media @mobile {
+      display: inline-block;
+      text-align: center;
+    }
+    
+  }
+  
+  .button-nav {
+    text-align: center;
+    width: 15em;
+    flex-grow: 1 1 auto;
+    // border: 1px solid #0777b3;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-family: @df-sans;
+    font-size: 17px;
+    background-color: #a1cae0;
+    color: black !important;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 8px;
+
+    @media @mobile {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  
+  .button-nav:hover {
+    cursor: pointer;
+    background-color: #0777b3;
+    color: white !important;
+  }
+
+  .redaction-example {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid @df-border-gray;
+    padding: 15px 15px 0;
+  }
