@@ -279,6 +279,8 @@ h1 {
     }
 
     .example {
+      padding-block-end: 10px;
+
       .example_image {
         max-width: 500px;
         margin: auto;
@@ -329,16 +331,15 @@ h1 {
     }
 
     .redact {
-        padding: 2px 5px;
-        background: #0777b3;
-        border-radius: 3px;
+        padding: 10px 5px;
+        background: #104968;
+        border-radius: 5px;
         color: white;
         display: block;
-        margin: auto;
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 3px;
-        padding: 5px;
+        font-size: 14px;
+        // font-weight: bold;
+        margin: 3px auto;
+        padding: 4px 6px;
         border: none;
 
       .toggle {
@@ -346,7 +347,7 @@ h1 {
         &.show { display: inline-block; }
       }
     }
-    .redact:hover { background-color: #104968; }
+    .redact:hover { background-color: black; }
 
   }
 
@@ -508,12 +509,20 @@ h1 {
 //sectioning
 
 .flex-3 {
-  h3 { margin: 3px 0px; font-size: 20px; }
-  ul { padding: 0px; }
   width: 33%;
   display: inline-block;
   vertical-align: top;
-  padding-right: 5px;
+  padding-right: 10px;
+
+  h3 { 
+    margin: 10px 0px;
+    font-size: 19px;
+    min-height: 20px;
+  }
+  ul { 
+    padding: 0px; 
+  }
+
   li {
     list-style: none;
     display: block;
@@ -560,9 +569,11 @@ h1 {
 
     p {
       display: inline;
-      font-size: 18px;
+      font-size: 16px;
       vertical-align: middle;
-      line-height: 1.1em;
+      line-height: 1.6em;
+      font-family: @df-sans;
+      padding-left: 10px;
     }
 
     &:last-child {
@@ -583,14 +594,14 @@ h1 {
 .directions {
   color: @df-middle-gray;
   font-family: @df-sans;
-  font-size: 17px;
+  font-size: 19px;
   font-style: italic;
   text-align: center;
   padding-bottom: 20px
 }
 
 .section {
-  max-width: 740px;
+  max-width: 840px;
   margin: auto;
   padding: 10px;
 }
@@ -599,13 +610,8 @@ h1 {
 .change-table {
   // display: flex;
   font-size: 0px;
-  margin-top: 10px;
-  // padding: 10px;
-
+  padding: 20px 0 0;
 }
-
-
-
 
 
 //credits
@@ -635,4 +641,97 @@ h1 {
   max-width: 900px;
   padding: 0 16px;
   margin-block-end: 60px;
+  }
+
+
+  .navButton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px;
+
+    @media @mobile {
+      display: inline-block;
+      text-align: center;
+    }
+    
+  }
+  
+  .button-nav {
+    text-align: center;
+    width: 15em;
+    flex-grow: 1 1 auto;
+    // border: 1px solid #0777b3;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-family: @df-sans;
+    font-size: 17px;
+    background-color: #a1cae0;
+    color: black !important;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 8px;
+
+    @media @mobile {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  
+  .button-nav:hover {
+    cursor: pointer;
+    background-color: #0777b3;
+    color: white !important;
+  }
+
+  .redaction-example {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid @df-border-gray;
+    padding: 15px 15px 0;
+  }
+
+  .redaction-key {
+    img {
+      max-width: 40px;
+      padding-right: 10px;
+    }
+    margin: auto;
+    text-align: center;
+    // line-height: 1.6em;
+    font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+    font-size: 17px;
+    vertical-align: middle;
+    padding-block-end: 20px;
+  }
+
+  .download-group {
+    max-width: 250px;
+    margin: auto;
+    border: 1px solid @df-border-gray;
+    padding: 15px 15px 0;
+
+    @media @mobile {
+      max-width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 310px;
+    padding-bottom: 20px;
+  }
+
+  .flex2 {
+    flex: 1;
+    max-width: 50%;
+  
+    @media @mobile {
+      flex-basis: 100%;
+    }
   }

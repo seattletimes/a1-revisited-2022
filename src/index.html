@@ -8,7 +8,7 @@
       <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
     <% } %>
     <% if (json.project.production && !json.project.embedded) { %>
-      <%= t.include("partials/_gtm.html") %>
+      <%= t.include("/_gtm.html") %>
     <% } %>
     <link rel="preload" as="image" href="./assets/RefundsFreeze.png">
     <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
@@ -26,7 +26,7 @@
 
       <div class="header">
         <h1>A1 Revisited: At a historic moment, this paper missed the mark.</h1>
-        <img src="./assets/A1-revisit-double.jpg">
+        <img src="./assets/A1-revisit-double.jpg" alt="annotated image of the original A1 page ones from 1942">
       </div>
 
       <div class="body-text">
@@ -39,17 +39,33 @@
 
       <p>Eighty years later, in an effort to take accountability for and learn from the harm caused by our coverage that day, The Times has revisited the stories, photos and headlines that told the story of that historic event.</p>
 
-      <p>We formed a team of journalists, editors, designers, news researchers and photo editors, and collaborated with local non-profit organization Densho, to scrutinize every word, caption, photo and design decision made in telling those stories.</p>
+      <p>We formed a team of journalists, editors, designers, news researchers and photo editors, and collaborated with local non-profit organization <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>, to scrutinize every word, caption, photo and design decision made in telling those stories.</p>
 
       <p>In our examination, we found that our 1942 coverage used racist slurs and stereotypes, inaccurate and offensive language, one-sided sourcing and perspective, and photos and layouts that downplayed the significance of the events of that day. We compiled these observations into notes on the 1942 pages, highlighting where each issue appears, then we categorized the issues identified and added these as tags in the annotations.</p>
 
-      <p>In an effort to avoid further harm, we chose to remove the racist slurs in this presentation, but, in the interest of historical accuracy, <a href="#download-original">you can find the original pages below</a> where you can opt-in to see the pages without those removals.</p>
+      <p>In an effort to avoid further harm, we chose to remove the racist language from view in this presentation. In the interest of historical accuracy, we offer the option of viewing the <a href="#download-original">original, unaltered pages</a> below.</p>
 
-      <p>We regret the <a href="http://seattletimes.com/a1-revisited-confronting-the-racism-on-our-own-front-pages" target="_blank" rel="nofollow noreferrer noopener">enduring legacy of the practices documented in these pages</a>, and we also acknowledge that racism is not a thing of the past. While The Seattle Times aspires to provide accurate, sensitive and inclusive coverage for all of our communities, we have work to do. This project has provided valuable insights that we hope will continue to inform and strengthen our journalism.</p>
+      <div class="redaction-example"><img src="./assets/featured_jpgs/RL-1.jpg" alt="example of what a redaction of a racial slur looks like">
+      <p class="caption">We redacted racist slurs by covering them with a black box (see an example above). You can opt-in to see the original text by clicking on the button below these images.</p>
+      </div>
+
+      <p>We regret the <a href="http://seattletimes.com/a1-revisited-confronting-the-racism-on-our-own-front-pages" target="_blank">enduring legacy of the practices documented in these pages</a>, and we also acknowledge that racism is not a thing of the past. While The Seattle Times aspires to provide accurate, sensitive and inclusive coverage for all of our communities, we have work to do. This project has provided valuable insights that we hope will continue to inform and strengthen our journalism.</p>
 
       <p>— Crystal Paul, project editor</p>
       </div>
 
+      <div class="section">
+        <h2>Ways to explore this project</h2>
+        <div class="navButton">
+            <div>
+              <a href="#changes" class="button-nav">Changes by category</a>
+              <a href="#download-original" class="button-nav">Download the original pages</a>
+              <a href="#by-story" class="button-nav">Annotations by story</a>
+            </div>
+        </div>
+      </div>
+
+      <a id="changes"></a>
       <div class="thin-div"></div>
 
       <div class="section">
@@ -59,42 +75,6 @@
         </div>
 
         <div class="change-table">
-          <div class="flex-3">
-            <ul class="table">
-              <h3>Presentation/structure changes</h3>
-              <li>
-                <div class="key Designlayout"></div>
-                  <p>Design / layout</p>
-              </li>
-              <li>
-                <div class="key Photoselection"></div>
-                  <p>Photo selection</p>
-              </li>
-              <li>
-                <div class="key Storyframingfocusbias"></div>
-                  <p>Story framing / focus (bias)</p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="flex-3">
-            <ul>
-              <h3>Reporting changes</h3>
-              <li>
-                <div class="key Lackofinformationunderreporting"></div>
-                  <p>Lack of information / underreporting</p>
-              </li>
-              <li>
-                <div class="key Inaccuracymisrepresentation"></div>
-                  <p>Inaccuracy / misrepresentation</p>
-              </li>
-              <li>
-                <div class="key Sourcingerrors"></div>
-                  <p>Sourcing errors</p>
-              </li>
-            </ul>
-          </div>
-
           <div class="flex-3">
             <ul>
               <h3>Language changes</h3>
@@ -110,15 +90,52 @@
                 <div class="key Offensivelanguage"></div>
                   <p>Offensive language</p>
               </li>
+            </ul>
+          </div>
+
+          <div class="flex-3">
+            <ul class="table">
+              <h3>Presentation/structure changes</h3>
               <li>
-                <div class="key redacted"></div>
-                  <p>Redacted slur</p>
+                <div class="key Designlayout"></div>
+                  <p>Design/layout</p>
+              </li>
+              <li>
+                <div class="key Photoselection"></div>
+                  <p>Photo selection</p>
+              </li>
+              <li>
+                <div class="key Storyframingfocusbias"></div>
+                  <p>Story framing/focus (bias)</p>
               </li>
             </ul>
           </div>
 
+          <div class="flex-3">
+            <ul>
+              <h3>Reporting changes</h3>
+              <li>
+                <div class="key Lackofinformationunderreporting"></div>
+                  <p>Lack of information/underreporting</p>
+              </li>
+              <li>
+                <div class="key Inaccuracymisrepresentation"></div>
+                  <p>Inaccuracy/misrepresentation</p>
+              </li>
+              <li>
+                <div class="key Sourcingerrors"></div>
+                  <p>Sourcing errors</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="redaction-key">
+          <span><img src="./assets/redaction.jpg" alt="example of what a redaction of a racial slur looks like">Redaction of a racial slur</span>
         </div>
       </div>
+
+<div class="directions">- - - Scroll down to explore - - -</div>      
 
       <div class="scroll-blocks">
         <div class="svg">
@@ -156,16 +173,9 @@
               <%  }); %>
               </div>
               <% }); %>
-
       </div>
 
       <%= t.include("partials/_ad.html", {number: 3}) %>
-
-      <div class="body-text">
-
-      <!-- <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "sidebar"}) %> -->
-
-      </div>
 
       <div class="thin-div"></div>
 
@@ -173,18 +183,24 @@
       <div class="buttonCon">
         <h2>Download the original 1942 pages</h2>
 
-        <div class="flex-group">
-          <div class="flex">
-            <button>Archive pages (includes graphic language) </button>
-            <img src="assets/A1-background-img.jpg">
+        <div class="flex-parent">
+          <div class="flex2">
+            <div class="download-group">
+              <h3>Unredacted pages (includes graphic language)</h3>
+              <a href="default.asp"><img src="assets/A1-background-img.jpg" alt="icon of the A1 document" style="width:100px;height:140px;"></a>
+            </div>
           </div>
 
-          <div class="flex">
-            <button>Redacted pages</button>
-            <img src="assets/A1-background-img.jpg">
+          <div class="flex2">
+            <div class="download-group">
+              <h3>Redacted pages</h3>
+              <a href="default.asp"><img src="assets/A1-background-img.jpg" alt="icon of the A1 document" style="width:100px;height:140px;"></a>
+            </div>
           </div>
         </div>
       </div>
+
+      <a id="by-story"></a>
 
       <div class="thin-div"></div>
 
@@ -192,9 +208,6 @@
 
       <div class="buttonCon">
         <h2>Explore all the annotations by story</h2>
-        <div class="graphic-chatter">
-          We found dozens of issues in our original reporting.
-        </div>
 
         <div class="directions">Select the highlighted part in each story to view our annotations.</div>
 
@@ -251,23 +264,23 @@
 
       <%= t.include("partials/_ad.html", {number: 2}) %>
 
-      <%= t.include("partials/_dontMiss.html") %>
+
 
 
       <div class="module">
         <div class="thin-div"></div>
           <h2>CREDITS</h2>
           <div class="directions">
-            With special thanks to local non-profit organization Densho.
+            With special thanks to local non-profit organization <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>.
           </div>
           <div class="constrained split">
-            <div class="column"><strong>Project editors:</strong>  Crystal Paul and Emily M. Eng
+            <div class="column"><strong>Project editors:</strong>  <a href="https://www.seattletimes.com/author/crystal-paul/" target="_blank">Crystal Paul</a> and <a href="https://www.seattletimes.com/author/emily-m-eng/" target="_blank">Emily M. Eng</a>
             <br>
-            <strong>Contributing editors:</strong>  Melissa Davis, Lynn Jacobson, Frank Mina and Danny Gawlowski
+            <strong>Contributing editors:</strong> <a href="https://www.seattletimes.com/author/naomi-ishisaka/" target="_blank">Naomi Ishisaka</a>, <a href="https://www.seattletimes.com/author/melissa-davis/" target="_blank">Melissa Davis</a>, <a href="https://www.seattletimes.com/author/lynn-jacobson/" target="_blank">Lynn Jacobson</a>, Frank Mina and <a href="https://www.seattletimes.com/author/danny-gawlowski/" target="_blank">Danny Gawlowski</a>
             </div>
 
             <div class="column">
-              <strong>Developer:</strong>  Lauren Flannery
+              <strong>Developer:</strong>  <a href="https://www.seattletimes.com/author/lauren-flannery/" target="_blank">Lauren Flannery</a>
               <br>
               <strong>Project coordinator:</strong>  Laura Gordon
               <br>
@@ -275,6 +288,8 @@
             </div>
           </div>
       </div>
+
+      <%= t.include("partials/_dontMiss.html") %>
 
 
       <%= t.include("partials/_navBottom.html") %>
