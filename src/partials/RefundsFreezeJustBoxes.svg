@@ -47,6 +47,9 @@
     <g id="offensiveLanguage">
       <rect id="OL-1" class="cls-5" x="401.30001" y="16.5" width="328" height="175.3"/>
       <rect id="OL-4" class="cls-5" x="401.30001" y="217.50001" width="328" height="46"/>
+      <rect id="OL-5" class="cls-5" x="401.30001" y="786" width="328" height="46"/>
+      <rect id="OL-6" class="cls-5" x="401.30001" y="889" width="328" height="30"/>
+      <rect id="OL-7" class="cls-5" x="401.30001" y="963" width="328" height="30"/>
     </g>
     <g id="inaccurateLanguage-2" data-name="inaccurateLanguage">
       <rect id="IL-10" class="cls-4" x="401.30001" y="335" width="328" height="13.96126"/>
