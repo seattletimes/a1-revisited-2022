@@ -48,13 +48,26 @@ h1 {
   }
 
   button {
-    background: #0777b3;
-    color: white;
-    display: block;
-    font-size: 19px;
-    font-weight: bold;
-    margin-bottom: 5px;
+    // background: #0777b3;
+    // color: white;
+    // display: block;
+    // font-size: 19px;
+    // font-weight: bold;
+    // margin-bottom: 5px;
     padding: 5px 20px;
+
+    text-align: center;
+    width: 15em;
+    flex-grow: 1 1 auto;
+    border: 1px solid #0777b3;
+    // padding: 6px 6px;
+    font-family: @df-sans;
+    font-size: 17px;
+    background-color: white;
+    color: black !important;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 8px;
     cursor: pointer;
 
     @media @mobile {
@@ -62,7 +75,8 @@ h1 {
     }
 
     &.show {
-      background-color: #134763;
+      background-color: #0777b3;
+      color: white !important;
     }
   }
 }
@@ -675,6 +689,7 @@ h1 {
   font-weight: 600;
   display: inline-block;
   margin-top: 8px;
+  cursor: pointer;
 
   @media @tablet {
     display: inline-block;
