@@ -13,8 +13,7 @@ const topData = require('../../data/Top.sheet.json');
 // console.log(refundFreezeData);
 
 var windowWidth = $('.scroll-blocks').width();
-
-
+var extra = (windowWidth > 600) ? 250 : 700;
 var triggerFadeIn = windowWidth > 500 ? '60%' : '120%';
 
 function makeWayPoints() {
@@ -180,8 +179,9 @@ $( '.fourthSvg img' ).ready(function() {
         });
       });
 
-var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + 400;
-$('#allStories').height(firstCall);
+var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + extra;
+$('#allStories').height(firstCall + 'px');
+console.log(firstCall + "px");
 });
 
 
@@ -214,7 +214,8 @@ $('#allStories').height(firstCall);
       $( this ).addClass('show');
       var findID = $( this).data('id');
       $( '#allStories' ).find(`.story[data-id='${findID}']`).addClass('show');
-      var setHeight = (findID === "top") ? $( '#allStories' ).find(`.story[data-id='${findID}']`).height() + 400 : $( '#allStories' ).find(`.story[data-id='${findID}']`).height();
-      $('#allStories').height(setHeight);
+      var storyHeight = $( '#allStories' ).find(`.story[data-id='${findID}']`).height();
+      var setHeight = (findID === "top") ? (storyHeight + extra) : storyHeight;
+      $('#allStories').height(setHeight + "px");
     });
 });

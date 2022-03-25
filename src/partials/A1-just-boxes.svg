@@ -101,6 +101,8 @@
 <g id="Photoselection">
 	<rect id="PS-1" x="109.5" y="588" class="st12" width="281.7" height="236.1"/>
 	<text x="120" y="600" dy="0.5em">1</text>
+	<rect id="PS-1" x="392" y="588" class="st12" width="281.7" height="245"/>
+	<rect id="PS-1" x="392" y="835" class="st12" width="195" height="230"/>
 </g>
 <g id="Designlayout">
 	<rect id="DL-1" x="354" y="234.5" class="st13" width="541.9" height="308.5"/>
