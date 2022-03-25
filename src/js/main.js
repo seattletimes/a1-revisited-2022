@@ -179,9 +179,13 @@ $( '.fourthSvg img' ).ready(function() {
         });
       });
 
-var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + extra;
-$('#allStories').height(firstCall + 'px');
-console.log(firstCall + "px");
+      setTimeout(function() {
+        var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + extra;
+        $('#allStories').height(firstCall + 'px');
+        console.log($( '#allStories' ).find('.story[data-id="top"]').height());
+      }, 700);
+
+
 });
 
 
