@@ -25,7 +25,11 @@
 
       <div class="header">
         <h1>A1 Revisited: At a historic moment, this paper missed the mark.</h1>
-        <img src="./assets/A1-revisit-double-featured-media.jpg" alt="annotated image of the original A1 page ones from 1942">
+        <img
+        srcset="./assets/A1-revisit-double.jpg  1100w,
+        ./assets/A1-revisit-double_mobile.jpg 500w"
+        sizes="(max-width: 500px) 500w, 1100w"
+        src="./assets/A1-revisit-double_mobile.jpg" alt="annotated image of the original A1 page ones from 1942">
       </div>
 
       <div class="body-text">
@@ -136,7 +140,10 @@
 
       <div class="scroll-blocks">
         <div class="svg">
-          <img src="./assets/A1-background-img.jpg" alt="annotated image of the original pages with numbered comments">
+          <img srcset="./assets/A1-background-img.jpg  1100w,
+          ./assets/A1-background-img_mobile.jpg 500w"
+          sizes="(max-width: 500px) 500w, 1100w"
+          src="./assets/A1-background-img_mobile.jpg" alt="annotated image of the original pages with numbered comments">
           <%= t.include("partials/A1-just-boxes.svg") %>
         </div>
 
@@ -223,7 +230,10 @@
 
       <div id="allStories">
         <div class="story secondSvg" data-id="tears">
-          <img src="./assets/Tears2col800_smaller.jpg" alt="an archive version of a story titled 'Tears, smiles mingle as [slur for Japanese] bid Bainbridge farewell'"/>
+          <img srcset="./assets/Tears2col800_smaller.jpg  1000w,
+          ./assets/Tears2col800_smaller_mobile.jpg 500w"
+          sizes="(max-width: 500px) 500w, 1100w"
+          src="./assets/Tears2col800_smaller_mobile.jpg" alt="an archive version of a story titled 'Tears, smiles mingle as [slur for Japanese] bid Bainbridge farewell'"/>
           <%= t.include("partials/Tears-just-boxes.svg") %>
 
           <div id="tearsPopup">
@@ -234,7 +244,11 @@
         </div>
 
         <div class="story thirdSvg" data-id="refunds">
-          <img src="./assets/RefundsFreeze.png" alt="an archive version of a story titled 'No refunds for [slur for Japanese] says city'"/>
+          <img srcset="./assets/RefundsFreeze.png  1000w,
+          ./assets/RefundsFreeze_mobile.jpg 500w"
+          sizes="(max-width: 500px) 500w, 1100w"
+          src="./assets/RefundsFreeze_mobile.jpg"
+          alt="an archive version of a story titled 'No refunds for [slur for Japanese] says city'"/>
           <%= t.include("partials/RefundsFreezeJustBoxes.svg") %>
 
           <div id="refundsFreezesPopup">
@@ -245,7 +259,10 @@
         </div>
 
         <div class="story fourthSvg show" data-id="top">
-          <img src="./assets/A1-Top.png" alt="an archive version of the Seattle Times A1 centerpiece"/>
+          <img srcset="./assets/A1-Top.png  1000w,
+          ./assets/A1-Top_mobile.jpg 500w"
+          sizes="(max-width: 500px) 500w, 1100w"
+          src="./assets/A1-Top_mobile.jpg" alt="an archive version of the Seattle Times A1 centerpiece"/>
           <%= t.include("partials/A1-Top-Boxes-01.svg") %>
 
           <div id="topPopup">
