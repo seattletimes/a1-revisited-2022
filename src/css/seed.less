@@ -90,6 +90,8 @@ h1 {
   max-width: 1000px;
   margin: auto;
   text-align: center;
+
+  img { width: 100%; }
 }
 
 .body-text {
@@ -150,6 +152,16 @@ h1 {
     &.show {
       opacity: 1;
     }
+  }
+
+  svg foreignObject {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  &.show {
+    opacity: 1;
+  }
   }
 
   .st3,.st5,.st6,.st7,.st8,.st9,.st10,.st11,.st12,.st13 {

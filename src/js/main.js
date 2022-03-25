@@ -29,7 +29,7 @@ function makeWayPoints() {
                   var classList = $(element).attr("class").split(' ')[1];
                   if(direction === "down") {
                     $(`.svg svg #${classList}`).find( "rect" ).addClass("show");
-                    $(`.svg svg #${classList}`).find( "text" ).addClass("show");
+                    $(`.svg svg #${classList}`).find( "foreignObject" ).addClass("show");
                   }
                   else if (direction === "up") {
                   }
@@ -46,7 +46,7 @@ function makeWayPoints() {
                   }
                   else if (direction === "up") {
                     $(`.svg svg #${classList}`).find( "rect" ).removeClass("show");
-                    $(`.svg svg #${classList}`).find( "text" ).removeClass("show");
+                    $(`.svg svg #${classList}`).find( "foreignObject" ).removeClass("show");
                   }
                 },
                 offset: '95%'
