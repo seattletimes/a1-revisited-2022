@@ -9,7 +9,7 @@
       "path": "2022/a1-revisited-executive-order-9066-washington-japanese/"
     }
   },
-  "title": "What we found when we examined our 1942 coverage of Executive Order 9066",
+  "title": "A1 Revisited: At a historic moment, this paper missed the mark",
   "description": "On March 301942, Japanese American residents were forcibly removed from their homes. Here's how the Seattle Times covered it and what we do differently today.",
   "author": "Emily M Eng Crystal Paul",
   "url": "https://projects.seattletimes.com/2022/a1-revisited-executive-order-9066-washington-japanese/",
@@ -18,5 +18,5 @@
   "sheets": ["1LzBOAj9Z50VgJA_LcrlaWnYMttkBL7KKtlr7bWwbbok"],
   "docs": [],
   "embedded": false,
-  "production": false
+  "production": true
 }

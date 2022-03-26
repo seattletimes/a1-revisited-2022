@@ -173,12 +173,20 @@ $( '.fourthSvg img' ).ready(function() {
         });
       });
 
-      setTimeout(function() {
-        var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height()-300 + extra;
-        $('#allStories').height(firstCall + 'px');
-        console.log($( '#allStories' ).find('.story[data-id="top"]').height());
-      }, 700);
-});
+      if (window.innerWidth > 451) {
+        setTimeout(function() {
+            var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + extra;
+            $('#allStories').height(firstCall + 'px');
+            console.log($( '#allStories' ).find('.story[data-id="top"]').height());
+          }, 700);
+        } else {
+          setTimeout(function() {
+            var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height()-300 + extra;
+            $('#allStories').height(firstCall + 'px');
+            console.log($( '#allStories' ).find('.story[data-id="top"]').height());
+          }, 700);
+        }
+  });
 
     $( "#refundsFreezesPopup .close" ).click(function() {
       $('#refundsFreezesPopup').removeClass('show');

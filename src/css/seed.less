@@ -778,10 +778,10 @@ h1 {
     border: 1px solid #936B51;
 
 
-    @media @mobile {
+    @media @tablet {
       padding-bottom: 20px;
       margin-bottom: 20px;
-      max-width: 170px;
+      max-width: 160px;
       height: 90%;
       padding: 0;
     }
@@ -805,6 +805,11 @@ h1 {
     height: 340px;
     padding: 20px 0;
     text-align: center;
+
+    @media @tablet {
+      height: 315px;
+      padding: 0;
+    }
   }
 
   .flex2 {
@@ -829,4 +834,8 @@ h1 {
       width: 125px;
       font-weight: bold;
     }
+  }
+
+  .module {
+    padding-top: 10px;
   }
