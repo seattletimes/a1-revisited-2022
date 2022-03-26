@@ -45,26 +45,18 @@ h1 {
         height: 100%;
       }
       button:hover {
-        background-color: @df-blue;
+        background-color: #564437;
         color: white !important;
       }
     }
   }
 
   button {
-    // background: #0777b3;
-    // color: white;
-    // display: block;
-    // font-size: 19px;
-    // font-weight: bold;
-    // margin-bottom: 5px;
     padding: 5px 20px;
-
     text-align: center;
     width: 15em;
     flex-grow: 1 1 auto;
-    border: 1px solid #0777b3;
-    // padding: 6px 6px;
+    border: 1px solid #936B51;
     font-family: @df-sans;
     font-size: 17px;
     background-color: white;
@@ -79,7 +71,7 @@ h1 {
     }
 
     &.show {
-      background-color: #0777b3;
+      background-color: #936B51;
       color: white !important;
     }
   }
@@ -200,8 +192,6 @@ h1 {
     margin: 50vh auto;
     margin-left: ~"calc((100vh * .68) + 20px)";
     font-family: @df-sans;
-    // background-color: #eee;
-    // padding: 10px;
     max-width: 600px;
 
     &.Photoselection {
@@ -365,7 +355,7 @@ h1 {
 
     .redact {
         padding: 10px 5px;
-        background: #104968;
+        background: black;
         color: white;
         display: block;
         font-size: 14px;
@@ -378,7 +368,7 @@ h1 {
         &.show { display: inline-block; }
       }
     }
-    .redact:hover { background-color: black; }
+    .redact:hover { background-color: #564437; }
   }
 
   .block:last-child {
@@ -713,7 +703,7 @@ h1 {
   text-align: center;
   width: 15em;
   flex-grow: 1 1 auto;
-  border: 1px solid #0777b3;
+  border: 1px solid #936B50;
   padding: 6px 6px;
   font-family: @df-sans;
   font-size: 17px;
@@ -732,7 +722,7 @@ h1 {
 
 .button-nav:hover {
   cursor: pointer;
-  background-color: #0777b3;
+  background-color: #564437;
   color: white !important;
 }
 
@@ -785,6 +775,8 @@ h1 {
     background-color: white;
     text-decoration: underline;
     height: 100%;
+    border: 1px solid #936B51;
+
 
     @media @mobile {
       padding-bottom: 20px;
@@ -795,7 +787,7 @@ h1 {
     }
   }
   .download-group:hover {
-    background-color: rgba(7,119,179,0.4);
+    background-color: #936b515b;
   }
 
   .left {
@@ -813,10 +805,6 @@ h1 {
     height: 340px;
     padding: 20px 0;
     text-align: center;
-
-    // @media @mobile {
-    //   height: auto;
-    // }
   }
 
   .flex2 {
@@ -827,11 +815,12 @@ h1 {
 
     @media @mobile {
       flex-basis: 100%;
-      // max-width: 100%;
       margin: 0 5px;
     }
   }
-  .flex2:hover { cursor: pointer; }
+  .flex2:hover { 
+    cursor: pointer; 
+  }
 
   .thin-div {
     .center {
