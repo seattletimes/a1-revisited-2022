@@ -1,5 +1,4 @@
 @import "seattletimes";
-@import "comments";
 
 @photo: red;
 @lackOfInfo: blue;
@@ -314,7 +313,7 @@ h1 {
 
       .example_image {
         max-width: 500px;
-        margin: 20px auto 0px auto;
+        margin: 15px auto 0px auto;
         padding: 0 10px;
         display: none;
 
@@ -324,41 +323,44 @@ h1 {
 
         @media @mobile {
           padding: 0 20px;
+          margin: 10px auto 0px auto;
         }
       }
 
       .example_text {
-        // background-color: #fff;
         font-size: 17px;
-        padding: 10px;
-        margin-top: 5px;
+        padding: 10px 30px 0;
 
         @media @mobile {
           font-size: 15px;
-
+          padding: 5px 20px 0;
         }
+      }
 
-        .numberedCircle {
-          display: inline-block;
-          width: 22px;
-          height: 22px;
-          font-size: 20px;
-          margin-right: 7px;
-          background-color: black;
-          color: white;
-          font-weight: bold;
-          line-height: 1.1em;
-          border-radius: 50%;
-          text-align: center;
+      .numberedCircle {
+        width: 22px;
+        height: 22px;
+        font-size: 20px;
+        margin-right: 7px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        line-height: 1.1em;
+        border-radius: 50%;
+        text-align: center;
+        margin: 20px auto 0;
+
+        @media @mobile {
+          margin: 12px auto 0;
         }
       }
     }
 
     .example:nth-child(3n) {
-      margin-top: 2em;
+      // margin-top: 2em;
     }
     .example:nth-child(4n) {
-      margin-top: 2em;
+      // margin-top: 2em;
     }
 
     .redact {
@@ -367,7 +369,6 @@ h1 {
         color: white;
         display: block;
         font-size: 14px;
-        // font-weight: bold;
         margin: 3px auto;
         padding: 4px 6px;
         border: none;
@@ -540,6 +541,10 @@ h1 {
   // display: flex;
   font-size: 0px;
   padding: 20px 0 0;
+
+  @media @mobile {
+    padding: 10px 20px 0;
+  }
 }
 
 .flex-3 {
@@ -552,6 +557,7 @@ h1 {
     margin: 10px 0px;
     font-size: 19px;
     min-height: 20px;
+    font-family: @df-sans;
   }
   ul {
     padding: 0px;
@@ -563,6 +569,10 @@ h1 {
     line-height: 14px;
     margin-bottom: 5px;
     padding-right: 5px;
+
+    @media @mobile {
+      margin-bottom: 0px;
+    }
 
     .key {
       width: 20px;
@@ -722,9 +732,13 @@ h1 {
 
 .redaction-example {
   max-width: 500px;
-  margin: auto;
+  margin: 40px auto;
   border: 1px solid @df-border-gray;
   padding: 15px 15px 0;
+
+  @media @mobile {
+    margin: 20px auto;
+  }
 }
 
 .redaction-key {
@@ -735,11 +749,15 @@ h1 {
 
   margin: auto;
   text-align: center;
-  // line-height: 1.6em;
   font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
   font-size: 17px;
   vertical-align: middle;
   padding-block-end: 20px;
+
+  @media @mobile {
+    text-align: left;
+    padding: 20px;
+  }
 }
 
 //download section
@@ -789,10 +807,9 @@ h1 {
     padding: 20px 0;
     text-align: center;
 
-    @media @mobile {
-      height: auto;
-      // display: block;
-    }
+    // @media @mobile {
+    //   height: auto;
+    // }
   }
 
   .flex2 {
@@ -804,7 +821,7 @@ h1 {
     @media @mobile {
       flex-basis: 100%;
       max-width: 100%;
-      margin: 5px;
+      margin: 0 5px;
     }
   }
   .flex2:hover { cursor: pointer; }
