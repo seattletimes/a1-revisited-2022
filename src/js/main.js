@@ -174,15 +174,11 @@ $( '.fourthSvg img' ).ready(function() {
       });
 
       setTimeout(function() {
-        var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height() + extra;
+        var firstCall = $( '#allStories' ).find('.story[data-id="top"]').height()-300 + extra;
         $('#allStories').height(firstCall + 'px');
         console.log($( '#allStories' ).find('.story[data-id="top"]').height());
       }, 700);
-
-
 });
-
-
 
     $( "#refundsFreezesPopup .close" ).click(function() {
       $('#refundsFreezesPopup').removeClass('show');
