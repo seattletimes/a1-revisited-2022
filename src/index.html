@@ -8,7 +8,7 @@
       <script src="https://www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-projects-bundle.js" async></script>
     <% } %>
     <% if (json.project.production && !json.project.embedded) { %>
-      <%= t.include("/_gtm.html") %>
+      <%= t.include("partials/_gtm.html") %>
     <% } %>
     <link rel="preload" as="image" href="./assets/RefundsFreeze.png">
     <script src="https://kit.fontawesome.com/9d53be7224.js" crossorigin="anonymous"></script>
@@ -35,6 +35,7 @@
       <div class="body-text">
       <p class="byline">By <a href="https://www.seattletimes.com/author/crystal-paul/" target="_blank">Crystal Paul</a> and <a href="https://www.seattletimes.com/author/emily-m-eng" target="_blank">Emily M. Eng</a></p>
       <p class="staff-position">Seattle Times editors</p>
+      <p class="publish-date">Published March 27, 2022</p>
 
       <p>In February 1942, a few short months after the attack at Pearl Harbor, President Franklin D. Roosevelt signed Executive Order 9066 designating Japanese Americans as “threats” to national security. They were evicted from their homes on the West Coast and sent to incarceration camps.</p>
 
@@ -42,7 +43,7 @@
 
       <p>Eighty years later, in an effort to take accountability for and learn from the harm caused by our coverage that day, <a href="https://www.seattletimes.com/?p=14571308" target="_blank" rel="nofollow noreferrer noopener">The Times has revisited the stories, photos and headlines that told the story of that historic event.</a></p>
 
-      <p>We formed a team of journalists, editors, designers, news researchers and photo editors, and collaborated with local non-profit organization <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>, to scrutinize every word, caption, photo and design decision made in telling those stories.</p>
+      <p>We formed a team of reporters, editors, designers, news researchers and photo editors, and collaborated with Seattle-based Japanese American history preservation nonprofit <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>, to scrutinize every word, caption, photo and design decision made in telling those stories.</p>
 
       <p>In our examination, we found that our 1942 coverage used racist slurs and stereotypes, inaccurate and offensive language, one-sided sourcing and perspective, and photos and layouts that downplayed the significance of the events of that day. We compiled these observations into notes on the 1942 pages, categorizing and highlighting them.</p>
 
@@ -167,12 +168,13 @@
               <div class="category <%= NoSpaceKey %>"><%= key %></div>
               <% (result[key]).forEach(element => { %>
                 <div class="example">
+                  <div class="numberedCircle"><%= element.Comment %></div>
                   <div class="example_image show"><img src="./assets/featured_jpgs/<%= element.svg %>.jpg" alt="<%= element.alt_text %>"/></div>
                   <% if (element.redact) { %>
                     <div class="example_image"><img src="./assets/featured_jpgs/<%= element.svg %>_unredacted.jpg" alt="<%= element.alt_text %>"/></div>
                     <button class="redact"><span class="show toggle">Show</span><span class="toggle">Hide</span> original language</button>
                   <% } %>
-                  <div class="example_text"><div class="numberedCircle"><%= element.Comment %></div><%= element.caption_popup %></div>
+                  <div class="example_text"><%= element.caption_popup %></div>
                 </div>
               <%  }); %>
               </div>
@@ -188,16 +190,16 @@
         <div class="flex-parent">
           <div class="flex2">
             <div class="download-group right">
-              <a href="default.asp"><h4>Unredacted pages (includes graphic language)</h4> </a>
-              <a href="default.asp"><img src="assets/A1-background-img.jpg" alt="icon of the A1 document" style="width:100px;height:140px;"></a>
+              <a href="https://www.documentcloud.org/documents/21527529-unredacted-a1-revisited-executive-order-9066-original-1942-pages-the_seattle_times" target="_blank" rel="nofollow noreferrer noopener"><h4>Unredacted pages (includes graphic language)</h4> </a>
+              <a href="https://www.documentcloud.org/documents/21527529-unredacted-a1-revisited-executive-order-9066-original-1942-pages-the_seattle_times" target="_blank" rel="nofollow noreferrer noopener"><img src="assets/A1-background-img.jpg" alt="icon of the A1 document" style="width:100px;height:154px;"></a>
             </div>
           </div>
 
           <div class="flex2">
             <div class="download-group left">
-              <a href="default.asp"><h4>Redacted pages</h4></a>
+              <a href="https://www.documentcloud.org/documents/21527534-redacted-a1-revisited-executive-order-9066-original-1942-pages-the_seattle_times" target="_blank" rel="nofollow noreferrer noopener"><h4>Redacted pages</h4></a>
 
-              <a href="default.asp"><img src="assets/A1-background-img.jpg" alt="icon of the A1 document" style="width:100px;height:140px;"></a>
+              <a href="https://www.documentcloud.org/documents/21527534-redacted-a1-revisited-executive-order-9066-original-1942-pages-the_seattle_times" target="_blank" rel="nofollow noreferrer noopener"><img src="assets/A1-background-img.jpg" alt="icon of the A1 document" style="width:100px;height:154px;"></a>
             </div>
           </div>
         </div>
@@ -273,13 +275,11 @@
         </div>
       </div>
 
-      <%= t.include("partials/_ad.html", {number: 2}) %>
-
       <div class="module">
         <div class="thin-div"></div>
           <h2>CREDITS</h2>
           <div class="directions">
-            With special thanks to local non-profit organization <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>.
+            With special thanks to the Seattle-based Japanese American history preservation nonprofit <a href="https://densho.org/" target="_blank" rel="nofollow noreferrer noopener">Densho</a>.
           </div>
           <div class="constrained split">
             <div class="column"><strong>Project editors:</strong>  <a href="https://www.seattletimes.com/author/crystal-paul/" target="_blank">Crystal Paul</a> and <a href="https://www.seattletimes.com/author/emily-m-eng/" target="_blank">Emily M. Eng</a>
@@ -298,6 +298,7 @@
       </div>
 
       <%= t.include("partials/_dontMiss.html") %>
+      <%= t.include("partials/_ad.html", {number: 2}) %>
 
 
       <%= t.include("partials/_navBottom.html") %>

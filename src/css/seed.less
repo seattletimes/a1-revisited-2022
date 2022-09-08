@@ -1,5 +1,4 @@
 @import "seattletimes";
-@import "comments";
 
 @photo: red;
 @lackOfInfo: blue;
@@ -46,26 +45,18 @@ h1 {
         height: 100%;
       }
       button:hover {
-        background-color: @df-blue;
+        background-color: #564437;
         color: white !important;
       }
     }
   }
 
   button {
-    // background: #0777b3;
-    // color: white;
-    // display: block;
-    // font-size: 19px;
-    // font-weight: bold;
-    // margin-bottom: 5px;
     padding: 5px 20px;
-
     text-align: center;
     width: 15em;
     flex-grow: 1 1 auto;
-    border: 1px solid #0777b3;
-    // padding: 6px 6px;
+    border: 1px solid #936B51;
     font-family: @df-sans;
     font-size: 17px;
     background-color: white;
@@ -80,7 +71,7 @@ h1 {
     }
 
     &.show {
-      background-color: #0777b3;
+      background-color: #936B51;
       color: white !important;
     }
   }
@@ -201,8 +192,6 @@ h1 {
     margin: 50vh auto;
     margin-left: ~"calc((100vh * .68) + 20px)";
     font-family: @df-sans;
-    // background-color: #eee;
-    // padding: 10px;
     max-width: 600px;
 
     &.Photoselection {
@@ -314,7 +303,7 @@ h1 {
 
       .example_image {
         max-width: 500px;
-        margin: 20px auto 0px auto;
+        margin: 15px auto 0px auto;
         padding: 0 10px;
         display: none;
 
@@ -324,50 +313,52 @@ h1 {
 
         @media @mobile {
           padding: 0 20px;
+          margin: 10px auto 0px auto;
         }
       }
 
       .example_text {
-        // background-color: #fff;
         font-size: 17px;
-        padding: 10px;
-        margin-top: 5px;
+        padding: 10px 30px 0;
 
         @media @mobile {
           font-size: 15px;
-
+          padding: 5px 20px 0;
         }
+      }
 
-        .numberedCircle {
-          display: inline-block;
-          width: 22px;
-          height: 22px;
-          font-size: 20px;
-          margin-right: 7px;
-          background-color: black;
-          color: white;
-          font-weight: bold;
-          line-height: 1.1em;
-          border-radius: 50%;
-          text-align: center;
+      .numberedCircle {
+        width: 22px;
+        height: 22px;
+        font-size: 20px;
+        margin-right: 7px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        line-height: 1.1em;
+        border-radius: 50%;
+        text-align: center;
+        margin: 20px auto 0;
+
+        @media @mobile {
+          margin: 12px auto 0;
         }
       }
     }
 
     .example:nth-child(3n) {
-      margin-top: 2em;
+      // margin-top: 2em;
     }
     .example:nth-child(4n) {
-      margin-top: 2em;
+      // margin-top: 2em;
     }
 
     .redact {
         padding: 10px 5px;
-        background: #104968;
+        background: black;
         color: white;
         display: block;
         font-size: 14px;
-        // font-weight: bold;
         margin: 3px auto;
         padding: 4px 6px;
         border: none;
@@ -377,7 +368,7 @@ h1 {
         &.show { display: inline-block; }
       }
     }
-    .redact:hover { background-color: black; }
+    .redact:hover { background-color: #564437; }
   }
 
   .block:last-child {
@@ -391,6 +382,12 @@ h1 {
   max-width: 900px;
   margin: auto;
   overflow: hidden;
+  }
+
+.allStories.top.show {
+  @media @mobile {
+    max-height: 10px;
+  }
 }
 
 .secondSvg, .thirdSvg, .fourthSvg {
@@ -540,6 +537,10 @@ h1 {
   // display: flex;
   font-size: 0px;
   padding: 20px 0 0;
+
+  @media @mobile {
+    padding: 10px 20px 0;
+  }
 }
 
 .flex-3 {
@@ -552,6 +553,7 @@ h1 {
     margin: 10px 0px;
     font-size: 19px;
     min-height: 20px;
+    font-family: @df-sans;
   }
   ul {
     padding: 0px;
@@ -563,6 +565,10 @@ h1 {
     line-height: 14px;
     margin-bottom: 5px;
     padding-right: 5px;
+
+    @media @mobile {
+      margin-bottom: 0px;
+    }
 
     .key {
       width: 20px;
@@ -697,7 +703,7 @@ h1 {
   text-align: center;
   width: 15em;
   flex-grow: 1 1 auto;
-  border: 1px solid #0777b3;
+  border: 1px solid #936B50;
   padding: 6px 6px;
   font-family: @df-sans;
   font-size: 17px;
@@ -716,15 +722,19 @@ h1 {
 
 .button-nav:hover {
   cursor: pointer;
-  background-color: #0777b3;
+  background-color: #564437;
   color: white !important;
 }
 
 .redaction-example {
   max-width: 500px;
-  margin: auto;
+  margin: 40px auto;
   border: 1px solid @df-border-gray;
   padding: 15px 15px 0;
+
+  @media @mobile {
+    margin: 20px auto;
+  }
 }
 
 .redaction-key {
@@ -735,11 +745,15 @@ h1 {
 
   margin: auto;
   text-align: center;
-  // line-height: 1.6em;
   font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
   font-size: 17px;
   vertical-align: middle;
   padding-block-end: 20px;
+
+  @media @mobile {
+    text-align: left;
+    padding: 20px;
+  }
 }
 
 //download section
@@ -761,16 +775,19 @@ h1 {
     background-color: white;
     text-decoration: underline;
     height: 100%;
+    border: 1px solid #936B51;
 
-    @media @mobile {
+
+    @media @tablet {
       padding-bottom: 20px;
       margin-bottom: 20px;
-      max-width: 190px;
+      max-width: 160px;
       height: 90%;
+      padding: 0;
     }
   }
   .download-group:hover {
-    background-color: rgba(7,119,179,0.4);
+    background-color: #936b515b;
   }
 
   .left {
@@ -789,9 +806,9 @@ h1 {
     padding: 20px 0;
     text-align: center;
 
-    @media @mobile {
-      height: auto;
-      // display: block;
+    @media @tablet {
+      height: 315px;
+      padding: 0;
     }
   }
 
@@ -803,11 +820,12 @@ h1 {
 
     @media @mobile {
       flex-basis: 100%;
-      max-width: 100%;
-      margin: 5px;
+      margin: 0 5px;
     }
   }
-  .flex2:hover { cursor: pointer; }
+  .flex2:hover { 
+    cursor: pointer; 
+  }
 
   .thin-div {
     .center {
@@ -816,4 +834,8 @@ h1 {
       width: 125px;
       font-weight: bold;
     }
+  }
+
+  .module {
+    padding-top: 10px;
   }
